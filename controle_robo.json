@@ -1,5 +1,5 @@
 {
-  "modo": "pausado",
-  "ultimo_comando": "inicial",
-  "atualizado_utc": null
+  "modo": "ativo",
+  "ultimo_comando": "iniciar",
+  "atualizado_utc": "2026-10-10T12:07:42.931084+00:00"
 }
