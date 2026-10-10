@@ -33,3 +33,11 @@
 .compare-balance{display:block;font-size:clamp(22px,3vw,32px);letter-spacing:-.04em;margin:13px 0 6px;font-variant-numeric:tabular-nums}
 .compare-pnl{font-size:14px;font-weight:750}.compare-meta{font-size:11px;color:var(--muted);margin-top:9px;line-height:1.6}
 @media(max-width:640px){.compare-panel{padding:18px 14px}.compare-grid{grid-template-columns:1fr 1fr;gap:8px}.compare-card{padding:14px 12px}.compare-balance{font-size:clamp(19px,5vw,23px)}.compare-tabs{width:100%}.compare-tabs button{flex:1;padding:9px 5px}.compare-kicker{font-size:9px}}
+
+/* Laboratório V6: relatório separado das duas estratégias de 4h */
+.scalping-panel { margin-top: 22px; }
+.scalping-stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0;}
+.scalping-stats > div {min-width:0;padding:18px;border:1px solid #304355;border-radius:11px;background:rgba(18,34,49,.66);}
+.scalping-stats span {display:block;font-size:12px;line-height:1.4;color:#9bb0bd;margin-bottom:10px;}
+.scalping-stats strong {display:block;font-size:clamp(18px,2vw,25px);word-break:break-word;}
+@media(max-width:750px){.scalping-stats{grid-template-columns:repeat(2,minmax(0,1fr));}.scalping-stats > div{padding:13px;}}

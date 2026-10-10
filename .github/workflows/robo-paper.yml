@@ -67,6 +67,7 @@ jobs:
           git add -- estado_paper.json controle_robo.json estado_comparacao_v4.json estado_comparacao_v5.json
           if [ -d relatorios/historico ]; then git add -A -- relatorios/historico; fi
           if [ -d relatorios/comparativo ]; then git add -A -- relatorios/comparativo; fi
+          if [ -d relatorios/scalping_1m ]; then git add -A -- relatorios/scalping_1m; fi
           if ! git diff --cached --quiet; then
             git commit -m "Atualiza estado paper trading [skip ci]"
             git push origin "HEAD:${GITHUB_REF_NAME}"

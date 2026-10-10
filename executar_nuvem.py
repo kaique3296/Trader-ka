@@ -14,6 +14,7 @@ from pathlib import Path
 from robo import backtest, fetch_klines, save_json
 from comparador import generate_if_due
 from acompanhar import check_and_export
+from scalping import refresh_report_if_due
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / 'estado_paper.json'
@@ -23,6 +24,7 @@ CONTROL = ROOT / 'controle_robo.json'
 SHADOW_V4 = ROOT / 'estado_comparacao_v4.json'
 SHADOW_V5 = ROOT / 'estado_comparacao_v5.json'
 COMPARISON = ROOT / 'relatorios' / 'comparativo' / 'resumo.json'
+SCALPING_REPORT = ROOT / 'relatorios' / 'scalping_1m' / 'resumo.json'
 
 
 def maybe_generate_first_backtest():
@@ -55,6 +57,13 @@ def main():
     except (ValueError, RuntimeError, OSError, KeyError) as error:
         # A falha do comparativo não remove o relatório histórico existente.
         print(f'AVISO: comparação histórica indisponível: {error}', file=sys.stderr, flush=True)
+    # Laboratório V6: backtest de 1 minuto (14 dias), SEM papel 'ao vivo'.
+    # GitHub Actions pode atrasar e não deve executar stops de scalping.
+    try:
+        updated = refresh_report_if_due(SCALPING_REPORT, days=14)
+        print('Scalping V6 1m: ' + ('backtest calculado' if updated else 'backtest recente preservado'), flush=True)
+    except (ValueError, RuntimeError, OSError, KeyError, TypeError) as error:
+        print(f'AVISO: pesquisa V6 1m indisponível: {error}', file=sys.stderr, flush=True)
     action = normalize_action(os.environ.get('ROBO_ACAO', 'checar'))
     control, new_start, force_close = apply_command(load_control(CONTROL), action)
     print(f'Controle: {action}; estado solicitado: {control["modo"]}; SEM ordens reais.', flush=True)
@@ -83,6 +92,7 @@ def main():
         'paper_v5': read_paper(SHADOW_V5),
         'paper_description': 'Carteiras novas iniciadas juntas, separadas da simulação principal V4.',
     }
+    payload['scalping_v6'] = json.loads(SCALPING_REPORT.read_text(encoding='utf-8')) if SCALPING_REPORT.is_file() else None
     write_panel_data(payload, PANEL)
     print(f'Checagem concluída. Patrimônio fictício: R$ {status["equity_brl"]:.2f}.', flush=True)
     print(' | '.join(status['events']), flush=True)

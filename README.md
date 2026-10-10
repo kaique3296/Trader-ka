@@ -17,3 +17,9 @@ O GitHub Actions executa checagens aproximadamente a cada hora, sem garantia de 
 - Instruções Android: [INSTRUCOES_V5_ANDROID.md](INSTRUCOES_V5_ANDROID.md)
 
 O ZIP de atualização contém apenas código, testes e documentos. Não contém arquivos de estado, resultados anteriores ou controles salvos.
+
+## V6 — Scalping experimental de 1 minuto (backtest SOMENTE)
+
+A V6 acrescenta `scalping.py`, a seção **Laboratório V6** no painel e o arquivo de relatório `relatorios/scalping_1m/resumo.json`. O histórico público `BTCBRL/1m` dos últimos 14 dias é processado no máximo uma vez por dia, quando o GitHub Actions roda. A V4 principal e as carteiras V4/V5 continuam separadas e inalteradas. **Não há execução intraminuto de paper trading na V6:** GitHub Actions não fornece latência e frequência adequadas para scalping. Os números são hipotéticos e as taxas/slippage não são garantidas.
+
+Para instalar pelo Android, consulte [`INSTRUCOES_V6_ANDROID.md`](INSTRUCOES_V6_ANDROID.md). O ZIP V6 é cumulativo sobre V4/V5 e não inclui saldos, estados ou tokens.

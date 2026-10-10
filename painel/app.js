@@ -106,6 +106,22 @@
       caption.textContent = `Mesmo intervalo de ${shortDate(history.start_utc)} a ${shortDate(history.end_utc)}; mesmas taxas simuladas e R$ 1.000 virtuais por estratégia. Resultados retrospectivos, não previsão. Origem: Binance API; histórico não auditado externamente.`;
     } else caption.textContent='Backtest paralelo ainda não disponível. Verifique a conexão com a API na próxima execução do GitHub Actions.';
   }
+  function showScalping() {
+    const s = data?.scalping_v6;
+    if (!s || s.type !== 'BACKTEST_SCALPING_1M_EXPERIMENTAL') {
+      for (const id of ['scalp-equity','scalp-net','scalp-trades','scalp-winrate','scalp-cost','scalp-drawdown']) setText(id,'—');
+      setText('scalp-caption','Aguardando um backtest válido de 14 dias com candles de 1 minuto. Sem dados inventados. Confira o GitHub Actions.');
+      return;
+    }
+    setText('scalp-equity', money(s.final_brl));
+    setText('scalp-net', signedMoney(s.profit_brl));
+    $('scalp-net').className = pnlClass(s.profit_brl);
+    setText('scalp-trades', String(s.trades ?? '—'));
+    setText('scalp-winrate', percent(s.win_rate_pct));
+    setText('scalp-cost', money(s.total_estimated_cost_brl));
+    setText('scalp-drawdown', percent(s.max_drawdown_pct));
+    setText('scalp-caption', `Backtest (não ao vivo): ${dateUTC(s.first_candle_utc)} até ${dateUTC(s.last_candle_utc)} · ${s.candles} candles · limite de ${money(s.assumptions?.position_brl)} por compra · taxas simuladas ${percent(s.fee_pct_per_side)} + deslizamento ${percent(s.slippage_pct_per_side)} por lado. Somente preços públicos, sem garantia de preenchimento ou rentabilidade.`);
+  }
   function display() {
     if(!valid(data)){notice('Nenhum conjunto de dados válido disponível. Importe um arquivo dados.json gerado pelo robô.', 'danger');$('tab-paper').disabled=true;$('tab-backtest').disabled=true;return}
     if(mode==='paper' && !data.paper) mode='backtest';
@@ -147,6 +163,7 @@
     setText('metric-status-note',paper?`Checagens: ${b.checks ?? 0}`:'Simulação retrospectiva');
     setText('updated-text',paper?`Última checagem (UTC): ${dateUTC(b.last_check_utc)}`:`Exportado (UTC): ${dateUTC(data.generated_at_utc)}`);
     showComparison();
+    showScalping();
     drawChart(b.equity_curve);
     table(trades);
     $('benchmark').hidden=paper;
