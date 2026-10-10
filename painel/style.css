@@ -16,3 +16,20 @@
 .control-hint {color:#aabcc7;line-height:1.5;font-size:.8rem;margin:10px 0;}
 .control-line {color:#a1d3c9;font-size:.78rem;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;border-top:1px solid #2c4b50;padding-top:12px;}
 @media(max-width:640px){.control-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.control-actions #control-start{grid-column:span 2}.control-box{padding:16px}}
+
+/* V5: duas carteiras em papel lado a lado; sem projeções de lucro. */
+.compare-panel{margin-bottom:18px;padding:22px 24px;background:linear-gradient(115deg,#111d2a,#121f29)}
+.compare-panel .panel-header{margin-bottom:9px}.compare-tag{border:1px solid #34645b;border-radius:20px;padding:7px 11px;font-size:10px;font-weight:800;color:var(--mint)}
+.compare-lead,.compare-disclaimer{color:var(--muted);line-height:1.55;font-size:12px;margin:9px 0 13px}
+.compare-disclaimer{font-size:11px;margin:13px 0 0;color:#b2c5d2}
+.compare-tabs{display:flex;gap:5px;padding:4px;background:#0c1622;border:1px solid var(--border);border-radius:9px;width:max-content;max-width:100%;margin:14px 0}
+.compare-tabs button{background:transparent;color:var(--muted);border:0;padding:9px 13px;border-radius:6px;font-size:11px;font-weight:700}
+.compare-tabs button[aria-pressed="true"]{background:#24413f;color:#ddfff5}
+.compare-tabs button:focus-visible{outline:2px solid var(--blue)}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.compare-card{background:#0e1b29;border:1px solid #304154;border-radius:10px;padding:17px 19px}
+.compare-card-v5{border-color:#38675b;background:#112a29}
+.compare-kicker{font-size:10px;font-weight:800;letter-spacing:.10em;color:#a1b1c5}
+.compare-balance{display:block;font-size:clamp(22px,3vw,32px);letter-spacing:-.04em;margin:13px 0 6px;font-variant-numeric:tabular-nums}
+.compare-pnl{font-size:14px;font-weight:750}.compare-meta{font-size:11px;color:var(--muted);margin-top:9px;line-height:1.6}
+@media(max-width:640px){.compare-panel{padding:18px 14px}.compare-grid{grid-template-columns:1fr 1fr;gap:8px}.compare-card{padding:14px 12px}.compare-balance{font-size:clamp(19px,5vw,23px)}.compare-tabs{width:100%}.compare-tabs button{flex:1;padding:9px 5px}.compare-kicker{font-size:9px}}

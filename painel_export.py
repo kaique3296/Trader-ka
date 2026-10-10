@@ -100,6 +100,7 @@ def read_paper(path: Path, initial_brl=1000.0):
         'checks': int(state.get('checks') or 0),
         'halted': bool(state.get('halted')),
         'last_check_utc': state.get('last_check_utc'),
+        'started_utc': state.get('started_utc'),
         'last_processed_bar': state.get('last_processed_bar'),
         'trades': normalize_trades(state.get('trades') or []),
         'equity_curve': normalize_curve(state.get('equity_history') or [], 'time'),

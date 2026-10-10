@@ -4,6 +4,7 @@
   const initial = window.ROBO_DASHBOARD_DATA ?? null;
   let data = initial;
   let mode = initial?.paper ? 'paper' : 'backtest';
+  let comparisonPeriod = 'paper';
   const $ = (id) => document.getElementById(id);
   const BRL = new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'});
   const PCT = new Intl.NumberFormat('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
@@ -76,6 +77,35 @@
       body.appendChild(row);
     }
   }
+  function showComparison() {
+    const comparison = data?.comparison || {};
+    for (const name of ['paper','year','90']) $('compare-'+name).setAttribute('aria-pressed',String(comparisonPeriod===name));
+    const paper = comparisonPeriod === 'paper';
+    const history = comparison.historical?.windows?.[comparisonPeriod === 'year' ? 'ultimo_ano' : 'ultimos_90_dias'];
+    const v4 = paper ? comparison.paper_v4 : history?.v4;
+    const v5 = paper ? comparison.paper_v5 : history?.v5;
+    for (const [key, item] of [['v4',v4],['v5',v5]]) {
+      const initial = paper ? item?.initial_brl : item?.initial_brl;
+      const balance = paper ? item?.equity_brl : item?.final_brl;
+      const net = finite(initial) && finite(balance) ? balance-initial : null;
+      const ret = finite(net) && initial > 0 ? net/initial*100 : null;
+      setText('compare-'+key+'-balance',money(balance));
+      const pnl = $('compare-'+key+'-pnl');pnl.textContent = `${signedMoney(net)} (${percent(ret)})`;
+      pnl.className = 'compare-pnl '+(finite(net)?pnlClass(net):'');
+      setText('compare-'+key+'-meta',!item ? 'Dados ainda não disponíveis.' :
+        paper ? `Checagens: ${item.checks || 0} · ${item.trades?.length || 0} saídas · ${item.btc_qty>0 ? 'Em posição virtual' : 'Sem posição'}` :
+        `${item.trades} operações · Acertos: ${percent(item.win_rate_pct)} · Queda máxima: ${percent(item.max_drawdown_pct)}`);
+    }
+    const caption = $('compare-caption');
+    if (paper) {
+      const p4 = comparison.paper_v4, p5 = comparison.paper_v5;
+      const sameStart = p4?.started_utc && p5?.started_utc && Math.abs(new Date(p4.started_utc) - new Date(p5.started_utc)) < 90_000;
+      const summary = p4 && p5 ? 'Carteiras independentes de R$ 1.000 cada, somente em simulação. Resultados de um período curto não comprovam eficácia.' : 'Comparação ao vivo ainda não iniciada. Execute a primeira checagem da V5 no GitHub Actions.';
+      caption.textContent = summary + (p4 && p5 && !sameStart ? ' Confira se começaram na mesma execução.' : '');
+    } else if (history) {
+      caption.textContent = `Mesmo intervalo de ${shortDate(history.start_utc)} a ${shortDate(history.end_utc)}; mesmas taxas simuladas e R$ 1.000 virtuais por estratégia. Resultados retrospectivos, não previsão. Origem: Binance API; histórico não auditado externamente.`;
+    } else caption.textContent='Backtest paralelo ainda não disponível. Verifique a conexão com a API na próxima execução do GitHub Actions.';
+  }
   function display() {
     if(!valid(data)){notice('Nenhum conjunto de dados válido disponível. Importe um arquivo dados.json gerado pelo robô.', 'danger');$('tab-paper').disabled=true;$('tab-backtest').disabled=true;return}
     if(mode==='paper' && !data.paper) mode='backtest';
@@ -116,6 +146,7 @@
     $('metric-status').className=status==='BLOQUEADO'?'text-negative':status==='EM POSIÇÃO'?'text-positive':'';
     setText('metric-status-note',paper?`Checagens: ${b.checks ?? 0}`:'Simulação retrospectiva');
     setText('updated-text',paper?`Última checagem (UTC): ${dateUTC(b.last_check_utc)}`:`Exportado (UTC): ${dateUTC(data.generated_at_utc)}`);
+    showComparison();
     drawChart(b.equity_curve);
     table(trades);
     $('benchmark').hidden=paper;
@@ -135,6 +166,7 @@
       notice(`PAPER TRADING: apenas operações virtuais. ${age>100?'Dados desatualizados: verifique o histórico de execuções do GitHub Actions.':'Dados da última checagem da simulação na nuvem.'}`,age>100?'warning':'info');
     } else notice('Backtest com dados importados (origem não verificada automaticamente). Rentabilidade passada não garante resultados futuros.');
   }
+  for (const item of ['paper','year','90']) $('compare-'+item).addEventListener('click',()=>{comparisonPeriod=item;if(valid(data))showComparison()});
   $('tab-paper').addEventListener('click',()=>{mode='paper';display()});
   $('tab-backtest').addEventListener('click',()=>{mode='backtest';display()});
   $('refresh-btn').addEventListener('click',()=>{window.location.reload()});

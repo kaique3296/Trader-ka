@@ -6,11 +6,13 @@ Não implementa ordens reais nem lê credenciais de API.
 from __future__ import annotations
 import sys
 import os
+import json
 from controle import normalize_action, load_control, apply_command, save_control
 from painel_export import build_payload, write_panel_data
-from robo import paper_once
+from robo import paper_once, api_request
 from pathlib import Path
 from robo import backtest, fetch_klines, save_json
+from comparador import generate_if_due
 from acompanhar import check_and_export
 
 ROOT = Path(__file__).resolve().parent
@@ -18,6 +20,9 @@ STATE = ROOT / 'estado_paper.json'
 REPORTS = ROOT / 'relatorios' / 'historico'
 PANEL = ROOT / 'painel'
 CONTROL = ROOT / 'controle_robo.json'
+SHADOW_V4 = ROOT / 'estado_comparacao_v4.json'
+SHADOW_V5 = ROOT / 'estado_comparacao_v5.json'
+COMPARISON = ROOT / 'relatorios' / 'comparativo' / 'resumo.json'
 
 
 def maybe_generate_first_backtest():
@@ -44,16 +49,40 @@ def maybe_generate_first_backtest():
 
 def main():
     maybe_generate_first_backtest()
+    try:
+        changed = generate_if_due(COMPARISON)
+        print('Comparação histórica: ' + ('calculada no mesmo histórico' if changed else 'relatório recente preservado'), flush=True)
+    except (ValueError, RuntimeError, OSError, KeyError) as error:
+        # A falha do comparativo não remove o relatório histórico existente.
+        print(f'AVISO: comparação histórica indisponível: {error}', file=sys.stderr, flush=True)
     action = normalize_action(os.environ.get('ROBO_ACAO', 'checar'))
     control, new_start, force_close = apply_command(load_control(CONTROL), action)
     print(f'Controle: {action}; estado solicitado: {control["modo"]}; SEM ordens reais.', flush=True)
     # Nunca cria entradas enquanto pausado. Pausa mantém a proteção simulada de posições;
     # encerrar solicita venda simulada ao preço observado pela API.
+    # Mesma amostra e mesmo preço para carteiras espelhadas V4/V5.
+    # A carteira V4 principal continua sendo preservada no arquivo de origem.
+    snapshot = (fetch_klines(days=25), float(api_request('/api/v3/ticker/price', {'symbol': 'BTCBRL'})['price']))
     status = paper_once(STATE, allow_entries=control['modo'] == 'ativo',
-                        force_close=force_close, new_start=new_start)
+                        force_close=force_close, new_start=new_start,
+                        market_data=snapshot)
+    status_v4 = paper_once(SHADOW_V4, allow_entries=control['modo'] == 'ativo',
+                           force_close=force_close, new_start=new_start,
+                           market_data=snapshot)
+    status_v5 = paper_once(SHADOW_V5, allow_entries=control['modo'] == 'ativo',
+                           force_close=force_close, new_start=new_start,
+                           strategy='v5', market_data=snapshot)
+    print(f'Comparação paper (2 carteiras VIRTUAIS): V4 R$ {status_v4["equity_brl"]:.2f}; V5 R$ {status_v5["equity_brl"]:.2f}.', flush=True)
     save_control(CONTROL, control)
     payload = build_payload(REPORTS, STATE)
     payload['control'] = control
+    from painel_export import read_paper
+    payload['comparison'] = {
+        'historical': json.loads(COMPARISON.read_text(encoding='utf-8')) if COMPARISON.is_file() else None,
+        'paper_v4': read_paper(SHADOW_V4),
+        'paper_v5': read_paper(SHADOW_V5),
+        'paper_description': 'Carteiras novas iniciadas juntas, separadas da simulação principal V4.',
+    }
     write_panel_data(payload, PANEL)
     print(f'Checagem concluída. Patrimônio fictício: R$ {status["equity_brl"]:.2f}.', flush=True)
     print(' | '.join(status['events']), flush=True)

@@ -150,7 +150,9 @@ def load_price_files(paths: list[str]) -> pd.DataFrame:
         pieces.append(raw)
     return normalize(pd.concat(pieces, ignore_index=True))
 
-def indicators(data: pd.DataFrame, c: Config = Config()) -> pd.DataFrame:
+def indicators(data: pd.DataFrame, c: Config = Config(), *, strategy: str = 'v4') -> pd.DataFrame:
+    if strategy not in ('v4', 'v5'):
+        raise ValueError('Estratégia não reconhecida. Use v4 ou v5.')
     df = normalize(data)
     close = df['close']
     df['ema20'] = close.ewm(span=c.ema_fast, adjust=False, min_periods=c.ema_fast).mean()
@@ -173,6 +175,34 @@ def indicators(data: pd.DataFrame, c: Config = Config()) -> pd.DataFrame:
         (df['rsi'].shift(1) < 50)
     ).fillna(False)
     df['trend_exit'] = ((df['ema20'] < df['ema50']) | (df['rsi'] < 45)).fillna(False)
+    if strategy == 'v5':
+        # Volatilidade e força de tendência com candles ENCERRADOS.
+        # Nenhum uso de dados futuros. São hipóteses fixas, não parâmetros otimizados.
+        previous_close = close.shift(1)
+        tr = pd.concat([(df['high']-df['low']).abs(),
+                        (df['high']-previous_close).abs(),
+                        (df['low']-previous_close).abs()], axis=1).max(axis=1)
+        atr = tr.ewm(alpha=1/14, adjust=False, min_periods=14).mean()
+        up = df['high'].diff()
+        down = -df['low'].diff()
+        plus_dm = up.where((up > down) & (up > 0), 0.0)
+        minus_dm = down.where((down > up) & (down > 0), 0.0)
+        smooth_plus = plus_dm.ewm(alpha=1/14, adjust=False, min_periods=14).mean()
+        smooth_minus = minus_dm.ewm(alpha=1/14, adjust=False, min_periods=14).mean()
+        pdi = 100 * smooth_plus / atr.replace(0, float('nan'))
+        mdi = 100 * smooth_minus / atr.replace(0, float('nan'))
+        dx = 100 * (pdi-mdi).abs() / (pdi+mdi).replace(0, float('nan'))
+        adx = dx.ewm(alpha=1/14, adjust=False, min_periods=14).mean()
+        atr_pct = atr / close
+        # Stop dinâmico com teto explícito de 4% sobre a posição. Alvo = 2x distância.
+        # O 'stop' em paper é por software e pode não ser executado no nível projetado.
+        df['atr_pct'] = atr_pct
+        df['adx'] = adx
+        df['entry_stop_pct'] = (atr_pct * 1.8).clip(lower=.015, upper=.04)
+        df['entry_target_pct'] = 2 * df['entry_stop_pct']
+        df['enter'] = (df['enter'] & (adx >= 20) &
+                       atr_pct.between(.004, .04) &
+                       (df['ema50'] > df['ema50'].shift(3))).fillna(False)
     return df
 
 
@@ -192,10 +222,12 @@ def max_drawdown(equities: pd.Series) -> float:
     return float((equities / high - 1).min())
 
 
-def backtest(data: pd.DataFrame, c: Config = Config()):
-    df = indicators(data, c)
+def backtest(data: pd.DataFrame, c: Config = Config(), *, strategy: str = 'v4', start_at_index: int = 0):
+    df = indicators(data, c) if strategy == 'v4' else indicators(data, c, strategy='v5')
     if len(df) < 100:
         raise ValueError('Backtest exige pelo menos 100 candles consecutivos de 4 horas.')
+    if start_at_index < 0 or start_at_index > len(df)-100:
+        raise ValueError('Janela de teste inválida. Exige pelo menos 100 candles após o corte.')
     cash, qty, buy_cost, entry = c.initial_brl, 0.0, 0.0, 0.0
     stop, target = 0.0, 0.0
     peak = c.initial_brl
@@ -225,6 +257,8 @@ def backtest(data: pd.DataFrame, c: Config = Config()):
 
     entry_time = None
     for i, r in df.iterrows():
+        if i < start_at_index:
+            continue  # warm-up dos indicadores sem abrir operações antes do período de avaliação
         current_time = r['time'].to_pydatetime()
         day = current_time.strftime('%Y-%m-%d')
         op, hi, lo, cl = (float(r[k]) for k in ('open', 'high', 'low', 'close'))
@@ -236,7 +270,7 @@ def backtest(data: pd.DataFrame, c: Config = Config()):
         # Sinal da barra ANTERIOR -> execução na abertura da barra atual.
         if i > 0 and qty > 0 and bool(df.iloc[i - 1]['trend_exit']):
             sell(op, current_time, 'trend_exit')
-        if i > 0 and qty == 0 and (not halted) and daily_pnl.get(day, 0.0) > -c.daily_loss_brl:
+        if i > start_at_index and qty == 0 and (not halted) and daily_pnl.get(day, 0.0) > -c.daily_loss_brl:
             if bool(df.iloc[i - 1]['enter']):
                 size = min(c.max_position_brl, max(0.0, cash * c.max_equity_fraction))
                 if size >= c.minimum_notional_brl and size <= cash:
@@ -245,8 +279,10 @@ def backtest(data: pd.DataFrame, c: Config = Config()):
                     buy_cost = size
                     entry = fill
                     entry_time = current_time
-                    stop = fill * (1 - c.stop_pct)
-                    target = fill * (1 + c.target_pct)
+                    stop_pct = float(df.iloc[i - 1]['entry_stop_pct']) if strategy == 'v5' else c.stop_pct
+                    target_pct = float(df.iloc[i - 1]['entry_target_pct']) if strategy == 'v5' else c.target_pct
+                    stop = fill * (1 - stop_pct)
+                    target = fill * (1 + target_pct)
                     cash -= size
         if qty > 0:
             # Se ambos níveis forem tocados no mesmo candle: stop primeiro.
@@ -275,7 +311,7 @@ def backtest(data: pd.DataFrame, c: Config = Config()):
     closed_trades = pd.DataFrame(trades)
     result = cash
     # Benchmark comprar no primeiro fechamento e vender no último, mesmas taxas e slippage.
-    first = float(df.iloc[0]['close'])
+    first = float(df.iloc[start_at_index]['close'])
     last = float(df.iloc[-1]['close'])
     qty_hold = c.initial_brl / (execution_price(first, 'buy', c) * (1 + c.fee_pct))
     final_hold = qty_hold * execution_price(last, 'sell', c) * (1 - c.fee_pct)
@@ -283,8 +319,8 @@ def backtest(data: pd.DataFrame, c: Config = Config()):
     summary = {
         'type': 'BACKTEST_EM_DADOS_FORNECIDOS',
         'symbol': SYMBOL, 'quote_currency': 'BRL', 'interval': INTERVAL,
-        'start_utc': df.iloc[0]['time'].isoformat(), 'end_utc': df.iloc[-1]['time'].isoformat(),
-        'candles': len(df), 'initial_brl': round(c.initial_brl, 2),
+        'start_utc': df.iloc[start_at_index]['time'].isoformat(), 'end_utc': df.iloc[-1]['time'].isoformat(),
+        'candles': len(df) - start_at_index, 'initial_brl': round(c.initial_brl, 2),
         'final_brl': round(result, 2), 'net_result_brl': round(result - c.initial_brl, 2),
         'net_return_pct': round((result / c.initial_brl - 1) * 100, 2),
         'max_drawdown_pct': round(max_drawdown(curve['equity_brl']) * 100, 2),
@@ -294,6 +330,7 @@ def backtest(data: pd.DataFrame, c: Config = Config()):
         'benchmark_buy_hold_return_pct': round((final_hold / c.initial_brl - 1) * 100, 2),
         'halted_by_drawdown': halted, 'fee_pct_per_side': c.fee_pct * 100,
         'slippage_pct_per_side': c.slippage_pct * 100,
+        'strategy': strategy,
     }
     return summary, closed_trades, curve
 
@@ -307,7 +344,7 @@ def save_json(path: Path, data: dict):
     os.replace(tmppath, path)
 
 
-def paper_once(state_path: Path, c: Config = Config(), *, allow_entries: bool = True, force_close: bool = False, new_start: bool = False):
+def paper_once(state_path: Path, c: Config = Config(), *, allow_entries: bool = True, force_close: bool = False, new_start: bool = False, strategy: str = 'v4', market_data=None):
     """Uma única checagem de preço; paper trading local, sem enviar ordens."""
     if state_path.exists():
         state = json.loads(state_path.read_text(encoding='utf-8'))
@@ -323,12 +360,15 @@ def paper_once(state_path: Path, c: Config = Config(), *, allow_entries: bool = 
     # Não aceita estado de estratégias/valores arbitrários sem validação de saldos.
     if float(state['cash_brl']) < -0.00001 or float(state['btc_qty']) < 0:
         raise ValueError('Estado de simulação inválido.')
-    df = indicators(fetch_klines(days=25), c)
+    if strategy not in ('v4', 'v5'):
+        raise ValueError('Estratégia inválida para paper trading.')
+    candles = market_data[0] if market_data is not None else fetch_klines(days=25)
+    df = indicators(candles, c) if strategy == 'v4' else indicators(candles, c, strategy='v5')
     if len(df) < 100:
         raise RuntimeError('Não há candles suficientes para calcular indicadores.')
-    raw_ticker = api_request('/api/v3/ticker/price', {'symbol': SYMBOL})
-    price = float(raw_ticker['price'])
-    if price <= 0:
+    raw_ticker = api_request('/api/v3/ticker/price', {'symbol': SYMBOL}) if market_data is None else None
+    price = float(raw_ticker['price']) if market_data is None else float(market_data[1])
+    if not math.isfinite(price) or price <= 0:
         raise RuntimeError('Preço recebido inválido.')
     now = datetime.now(timezone.utc)
     day = now.strftime('%Y-%m-%d')
@@ -381,11 +421,15 @@ def paper_once(state_path: Path, c: Config = Config(), *, allow_entries: bool = 
                 fill = execution_price(price, 'buy', c)
                 qty = size / (fill * (1 + c.fee_pct))
                 state['cash_brl'] -= size
+                stop_pct = float(df.iloc[-1]['entry_stop_pct']) if strategy == 'v5' else c.stop_pct
+                target_pct = float(df.iloc[-1]['entry_target_pct']) if strategy == 'v5' else c.target_pct
                 state.update({'btc_qty': qty, 'entry_brl': fill, 'buy_cost_brl': size,
-                              'stop_brl': fill * (1 - c.stop_pct),
-                              'target_brl': fill * (1 + c.target_pct),
+                              'stop_brl': fill * (1 - stop_pct),
+                              'target_brl': fill * (1 + target_pct),
                               'entry_time_utc': now.isoformat()})
                 events.append(f'COMPRA SIMULADA: R$ {size:.2f}; preço BTC R$ {fill:.2f}')
+    state['strategy'] = strategy
+    state['started_utc'] = state.get('started_utc') or now.isoformat()
     state['last_check_utc'] = now.isoformat()
     state['last_price_brl'] = price
     state['equity_brl'] = round(mark_equity(state['cash_brl'], state['btc_qty'], price, c), 4)
