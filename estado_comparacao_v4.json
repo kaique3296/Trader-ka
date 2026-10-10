@@ -11,17 +11,17 @@
   "halted": false,
   "daily_realized_brl": {},
   "trades": [],
-  "checks": 3,
+  "checks": 4,
   "equity_history": [
     {
-      "time": "2026-10-10T12:55:38.278509+00:00",
+      "time": "2026-10-10T12:57:24.941323+00:00",
       "equity_brl": 1000.0,
       "bar": "2026-10-10T08:00:00+00:00"
     }
   ],
   "strategy": "v4",
   "started_utc": "2026-10-10T12:33:22.841926+00:00",
-  "last_check_utc": "2026-10-10T12:55:38.278509+00:00",
-  "last_price_brl": 415726.0,
+  "last_check_utc": "2026-10-10T12:57:24.941323+00:00",
+  "last_price_brl": 415727.0,
   "equity_brl": 1000.0
 }
