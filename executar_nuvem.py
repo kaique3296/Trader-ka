@@ -5,6 +5,10 @@ Não implementa ordens reais nem lê credenciais de API.
 """
 from __future__ import annotations
 import sys
+import os
+from controle import normalize_action, load_control, apply_command, save_control
+from painel_export import build_payload, write_panel_data
+from robo import paper_once
 from pathlib import Path
 from robo import backtest, fetch_klines, save_json
 from acompanhar import check_and_export
@@ -13,6 +17,7 @@ ROOT = Path(__file__).resolve().parent
 STATE = ROOT / 'estado_paper.json'
 REPORTS = ROOT / 'relatorios' / 'historico'
 PANEL = ROOT / 'painel'
+CONTROL = ROOT / 'controle_robo.json'
 
 
 def maybe_generate_first_backtest():
@@ -39,9 +44,20 @@ def maybe_generate_first_backtest():
 
 def main():
     maybe_generate_first_backtest()
-    print('Executando uma checagem de paper trading na nuvem (SEM ordens reais).', flush=True)
-    check_and_export(STATE, REPORTS, PANEL)
-    print('Painel com dados atualizados e prontos para publicar.', flush=True)
+    action = normalize_action(os.environ.get('ROBO_ACAO', 'checar'))
+    control, new_start, force_close = apply_command(load_control(CONTROL), action)
+    print(f'Controle: {action}; estado solicitado: {control["modo"]}; SEM ordens reais.', flush=True)
+    # Nunca cria entradas enquanto pausado. Pausa mantém a proteção simulada de posições;
+    # encerrar solicita venda simulada ao preço observado pela API.
+    status = paper_once(STATE, allow_entries=control['modo'] == 'ativo',
+                        force_close=force_close, new_start=new_start)
+    save_control(CONTROL, control)
+    payload = build_payload(REPORTS, STATE)
+    payload['control'] = control
+    write_panel_data(payload, PANEL)
+    print(f'Checagem concluída. Patrimônio fictício: R$ {status["equity_brl"]:.2f}.', flush=True)
+    print(' | '.join(status['events']), flush=True)
+    print('Painel publicado na próxima etapa do workflow.', flush=True)
 
 
 if __name__ == '__main__':

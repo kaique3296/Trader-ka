@@ -27,9 +27,17 @@ class CloudTests(unittest.TestCase):
             self.assertFalse((Path(td)/'reports'/'resumo.json').exists())
 
     def test_cloud_calls_paper_only(self):
-        with patch.object(executar_nuvem,'maybe_generate_first_backtest'), \
-            patch.object(executar_nuvem,'check_and_export') as mocked:
+        with tempfile.TemporaryDirectory() as td, \
+            patch.object(executar_nuvem,'maybe_generate_first_backtest'), \
+            patch.object(executar_nuvem,'STATE',Path(td)/'estado.json'), \
+            patch.object(executar_nuvem,'CONTROL',Path(td)/'controle.json'), \
+            patch.object(executar_nuvem,'PANEL',Path(td)/'painel'), \
+            patch.object(executar_nuvem,'paper_once', return_value={'equity_brl':1000.0,'events':['Sem operação.']}) as mocked, \
+            patch.object(executar_nuvem,'build_payload',return_value={'schema_version':2,'paper_only':True, 'paper': {}}), \
+            patch.object(executar_nuvem,'write_panel_data') as mocked_panel:
             executar_nuvem.main()
-            mocked.assert_called_once_with(executar_nuvem.STATE, executar_nuvem.REPORTS, executar_nuvem.PANEL)
+            mocked.assert_called_once_with(executar_nuvem.STATE, allow_entries=False, force_close=False, new_start=False)
+            mocked_panel.assert_called_once()
+            self.assertEqual(json.loads(executar_nuvem.CONTROL.read_text())['modo'],'pausado')
 
 if __name__=='__main__':unittest.main()

@@ -3,7 +3,7 @@
   'use strict';
   const initial = window.ROBO_DASHBOARD_DATA ?? null;
   let data = initial;
-  let mode = 'backtest';
+  let mode = initial?.paper ? 'paper' : 'backtest';
   const $ = (id) => document.getElementById(id);
   const BRL = new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'});
   const PCT = new Intl.NumberFormat('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
@@ -24,10 +24,10 @@
   const setText = (id, value) => { $(id).textContent = String(value); };
   const pnlClass = (value) => value > 0 ? 'text-positive' : value < 0 ? 'text-negative' : '';
   const themeNumber = (id, value, format=money) => {
-    const el=$(id); el.textContent=format(value); el.classList.remove('text-positive', 'text-negative'); if (finite(value) && value !== 0) el.classList.add(pnlClass(value));
+    const el=$(id); el.textContent=format(value); el.classList.remove('text-positive', 'text-negative'); const tone=pnlClass(value); if (tone) el.classList.add(tone);
   };
   const valid = (raw) => raw && raw.schema_version === 2 && raw.paper_only === true && (raw.paper || raw.backtest) && (!raw.backtest || (raw.backtest.summary && Array.isArray(raw.backtest.trades) && Array.isArray(raw.backtest.equity_curve))) && (!raw.paper || (Array.isArray(raw.paper.trades) && Array.isArray(raw.paper.equity_curve)));
-  const messages = {stop:'Stop-loss',stop_software:'Stop simulado',target:'Alvo atingido',target_software:'Alvo simulado',trend_exit:'Saída por tendência',end_of_test:'Fim do backtest'};
+  const messages = {manual_close:'Encerramento manual',stop:'Stop-loss',stop_software:'Stop simulado',target:'Alvo atingido',target_software:'Alvo simulado',trend_exit:'Saída por tendência',end_of_test:'Fim do backtest'};
 
   function notice(message, level='info') {
     $('data-notice').className = `notice ${level === 'warning' ? 'is-warning' : level === 'danger' ? 'is-danger' : ''}`;
@@ -93,7 +93,10 @@
     const trades=b.trades ?? [];
     const wins=trades.filter(t=>finite(t.profit_brl)&&t.profit_brl>0).length;
     const rate=trades.length?100*wins/trades.length:null;
-    const status=paper?(b.halted?'BLOQUEADO':b.btc_qty>0?'EM POSIÇÃO':'AGUARDANDO'):(summary.halted_by_drawdown?'BLOQUEADO':'CONCLUÍDO');
+    const controlMode=data.control?.modo || 'não identificado';
+    $('control-box').hidden=!paper;
+    if(paper)setText('control-indicator',`Modo atual: ${controlMode==='ativo'?'ATIVO — analisando sinais':controlMode==='pausado'?'PAUSADO — sem novas compras':'não identificado'}`);
+    const status=paper?(b.halted?'BLOQUEADO':controlMode==='pausado'?'PAUSADO':b.btc_qty>0?'EM POSIÇÃO':'AGUARDANDO'):(summary.halted_by_drawdown?'BLOQUEADO':'CONCLUÍDO');
     setText('global-state',example?'DEMONSTRAÇÃO':paper?'PAPER TRADING':'BACKTEST · SIMULAÇÃO');
     setText('phase-badge',example?'DADOS FICTÍCIOS':paper?'PAPER TRADING':'BACKTEST');
     setText('balance-value',money(capital));
@@ -120,8 +123,8 @@
     $('paper-stop-row').hidden=!paper||!(b.btc_qty>0);
     if(paper&&b.btc_qty>0)setText('paper-stops',`${money(b.stop_brl)} / ${money(b.target_brl)}`);
     if(paper){
-      setText('strategy-state',b.halted?'Entradas suspensas':b.btc_qty>0?'Posição comprada em BTC':'Aguardando sinal de compra');
-      setText('strategy-description',b.halted?'A trava de risco foi acionada. O robô não abrirá posições novas até revisão.':b.btc_qty>0?`Posição virtual aberta. Entrada em ${money(b.entry_brl)}, com stop e alvo simulados. Stop não executa se o programa não estiver rodando.`:'Robô simulado sem posição. Aguardando condições da estratégia e novas checagens para processar sinais.');
+      setText('strategy-state',b.halted?'Entradas suspensas':controlMode==='pausado'?'Operações pausadas':b.btc_qty>0?'Posição comprada em BTC':'Aguardando sinal de compra');
+      setText('strategy-description',b.halted?'A trava de risco foi acionada. O robô não abrirá posições novas até revisão.':controlMode==='pausado'?'Sem novas compras. Posições antigas (se existirem) continuam sendo verificadas a cada execução.':b.btc_qty>0?`Posição virtual aberta. Entrada em ${money(b.entry_brl)}, com stop e alvo simulados. Stop não executa se o programa não estiver rodando.`:'Robô simulado ativo, aguardando um sinal válido para comprar.');
     } else {
       setText('strategy-state',summary.halted_by_drawdown?'Trava de risco ativada':'Backtest finalizado');
       setText('strategy-description',`Teste retrospectivo com ${summary.candles} candles de 4 horas, entre ${shortDate(summary.start_utc)} e ${shortDate(summary.end_utc)}. Resultados dependem dos dados usados, custos estimados e premissas da estratégia.`);

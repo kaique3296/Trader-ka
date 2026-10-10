@@ -307,7 +307,7 @@ def save_json(path: Path, data: dict):
     os.replace(tmppath, path)
 
 
-def paper_once(state_path: Path, c: Config = Config()):
+def paper_once(state_path: Path, c: Config = Config(), *, allow_entries: bool = True, force_close: bool = False, new_start: bool = False):
     """Uma única checagem de preço; paper trading local, sem enviar ordens."""
     if state_path.exists():
         state = json.loads(state_path.read_text(encoding='utf-8'))
@@ -332,7 +332,9 @@ def paper_once(state_path: Path, c: Config = Config()):
         raise RuntimeError('Preço recebido inválido.')
     now = datetime.now(timezone.utc)
     day = now.strftime('%Y-%m-%d')
-    new_bar = state['last_processed_bar'] != df.iloc[-1]['time'].isoformat()
+    # Ao iniciar após pausa, avalia o último candle completo uma única vez.
+    # Repetir iniciar com o bot ativo NÃO força novo sinal.
+    new_bar = new_start or state['last_processed_bar'] != df.iloc[-1]['time'].isoformat()
     state['checks'] += 1
     events = []
     qty = float(state['btc_qty'])
@@ -345,7 +347,9 @@ def paper_once(state_path: Path, c: Config = Config()):
     # Stops de software: checados somente quando o programa roda.
     exit_reason = None
     if qty > 0:
-        if price <= float(state['stop_brl']):
+        if force_close:
+            exit_reason = 'manual_close'
+        elif price <= float(state['stop_brl']):
             exit_reason = 'stop_software'
         elif price >= float(state['target_brl']):
             exit_reason = 'target_software'
@@ -369,7 +373,7 @@ def paper_once(state_path: Path, c: Config = Config()):
     # Sinal formado em candle já encerrado, executado no preço OBSERVADO agora.
     if new_bar:
         state['last_processed_bar'] = df.iloc[-1]['time'].isoformat()
-        if (state['btc_qty'] == 0 and not state['halted'] and
+        if (allow_entries and state['btc_qty'] == 0 and not state['halted'] and
                 state['daily_realized_brl'].get(day, 0.0) > -c.daily_loss_brl and
                 bool(df.iloc[-1]['enter']) and not exit_reason):
             size = min(c.max_position_brl, state['cash_brl'] * c.max_equity_fraction)

@@ -4,3 +4,15 @@
 @media(max-width:640px){.app-shell{padding:0 14px}.site-header{min-height:78px}.brand-symbol{width:37px}.brand-symbol svg{width:36px}.brand-title{font-size:14px}.brand-title span{font-size:9px}.brand-caption{font-size:10px}.header-meta{font-size:8px;letter-spacing:0;padding:8px 9px}.page-head{margin:30px 0 18px;align-items:stretch;flex-direction:column;gap:18px}.page-description{max-width:340px}.head-actions{display:grid;grid-template-columns:1fr 1fr}.btn{padding:10px 8px}.notice{font-size:11px}.subnav{align-items:stretch;flex-direction:column;margin:20px 0 14px;gap:11px}.view-switch{width:100%}.view-switch button{flex:1;font-size:11px;padding:10px 7px}.last-sync{padding:0 3px;font-size:10px}.hero-grid{grid-template-columns:1fr;gap:10px}.hero-primary{padding:23px 21px;min-height:230px}.hero-number{font-size:clamp(38px,10vw,52px);margin-top:20px}.hero-badge{font-size:8px;padding:6px 7px}.overline{font-size:9px}.hero-foot{font-size:11px}.hero-side{grid-template-columns:1fr 1fr;gap:10px}.side-box{padding:17px 15px;min-height:108px}.side-box strong{font-size:clamp(17px,5vw,22px)}.side-heading{font-size:9px}.side-muted{font-size:10px}.metric-grid{gap:10px;margin-top:10px}.metric-card{min-height:116px;padding:18px 14px}.metric-label{font-size:9px}.metric-card strong{font-size:24px}.section-two-col{gap:11px;margin-top:12px}.panel{padding:20px 17px}.panel-header h2{font-size:17px}.chart-legend{font-size:9px}.chart-wrap{min-height:215px}.chart-wrap svg{height:208px}.benchmark span{font-size:9px}.benchmark strong{font-size:16px}.strategy-state{margin-top:10px}.strategy-desc{min-height:0;margin-bottom:18px}.trades-panel{margin-top:11px}.table-scroll{margin-right:-2px}footer{flex-direction:column;gap:15px}footer p{text-align:left}}
 @media(max-width:360px){.header-meta{font-size:7px}.brand-title span{display:none}.hero-number{font-size:37px}.metric-card strong{font-size:21px}.panel{padding:18px 13px}.hero-foot>span:last-child{display:none}}
 [hidden]{display:none!important}
+
+/* V4: controls in a public read-only website. Commands require GitHub confirmation. */
+.control-box {border:1px solid #2d4a50;border-radius:14px;padding:22px;margin:0 0 18px;background:linear-gradient(135deg,#112f30,#121e2b 70%);}
+.control-title h2 {font-size:1.25rem;margin:8px 0 8px;color:#f0fffa;}
+.control-title p {color:#a6b8c5;font-size:.88rem;line-height:1.6;margin:0 0 14px;}
+.control-actions {display:flex;gap:10px;flex-wrap:wrap;margin:12px 0;}
+.control-actions .btn {text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;}
+.control-actions .btn-danger {background:transparent;color:#f4afae;border:1px solid #96595c;}
+.control-actions .btn-danger:hover {background:#532b35;}
+.control-hint {color:#aabcc7;line-height:1.5;font-size:.8rem;margin:10px 0;}
+.control-line {color:#a1d3c9;font-size:.78rem;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;border-top:1px solid #2c4b50;padding-top:12px;}
+@media(max-width:640px){.control-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.control-actions #control-start{grid-column:span 2}.control-box{padding:16px}}

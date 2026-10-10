@@ -2,6 +2,15 @@ name: Robo BTC - simulacao na nuvem
 
 on:
   workflow_dispatch:
+    inputs:
+      acao:
+        description: 'Ação do robô virtual'
+        required: true
+        type: choice
+        default: 'checar'
+        options: [checar, iniciar, pausar, encerrar]
+  issues:
+    types: [opened]
   schedule:
     # UTC. Checagem horaria, sempre no minuto 17 (horario pode atrasar).
     - cron: '17 * * * *'
@@ -17,6 +26,11 @@ concurrency:
 
 jobs:
   executar-e-publicar:
+    # Só o dono do repositório pode acionar os comandos públicos via Issues.
+    if: >-
+      github.event_name != 'issues' ||
+      (github.event.issue.user.login == github.repository_owner &&
+       contains(fromJSON('["TRADERKA_START","TRADERKA_PAUSE","TRADERKA_CLOSE"]'), github.event.issue.title))
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -25,6 +39,7 @@ jobs:
       - name: Obter codigo e estado anterior
         uses: actions/checkout@v4
         with:
+          ref: main  # obtem a versão mais recente do estado ao iniciar a fila
           persist-credentials: true
           fetch-depth: 0
 
@@ -38,13 +53,15 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Rodar simulacao (nao conecta conta da corretora)
+        env:
+          ROBO_ACAO: ${{ github.event_name == 'issues' && github.event.issue.title || inputs.acao || 'checar' }}
         run: python executar_nuvem.py
 
       - name: Guardar estado simulado para proxima execucao
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- estado_paper.json
+          git add -- estado_paper.json controle_robo.json
           if [ -d relatorios/historico ]; then git add -A -- relatorios/historico; fi
           if ! git diff --cached --quiet; then
             git commit -m "Atualiza estado paper trading [skip ci]"
