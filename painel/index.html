@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b101a">
+  <meta name="description" content="Painel de acompanhamento do robô simulado BTC/BRL, sem operações financeiras reais.">
+  <title>BTC/BRL · Monitor de estratégia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dados.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none"><rect x="2" y="2" width="32" height="32" rx="10" fill="#23D3B0" fill-opacity=".15"/><path d="M9 23l6-8 5 4 7-9M23 10h4v4" stroke="#40E7BF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div><div class="brand-title">NEXO <span>/ TRADING LAB</span></div><p class="brand-caption">BTC/BRL <span class="brand-dot">•</span> Estratégia automatizada</p></div>
+      </div>
+      <div class="header-meta"><span class="status-dot"></span><span id="global-state">MODO SIMULADO</span></div>
+    </header>
+
+    <section class="page-head" aria-label="Visão geral">
+      <div><div class="eyebrow">CENTRAL DE MONITORAMENTO</div><h1>Visão geral<span class="title-star">.</span></h1><p class="page-description">Acompanhe seu robô, a evolução do saldo e as decisões da estratégia em um só lugar.</p></div>
+      <div class="head-actions">
+        <button class="btn btn-secondary" id="refresh-btn" type="button" title="Recarregar os dados publicados">↻ <span>Atualizar tela</span></button>
+        <label class="btn btn-primary" for="data-upload"><span aria-hidden="true">↥</span> Importar dados</label>
+        <input id="data-upload" type="file" accept="application/json,.json" aria-label="Importar dados JSON" hidden>
+      </div>
+    </section>
+
+    <div class="notice" id="data-notice" role="status"><span class="notice-icon">!</span><span id="notice-message">Carregando dados…</span></div>
+
+    <div class="subnav">
+      <div class="view-switch" role="tablist" aria-label="Selecionar fonte de resultados">
+        <button id="tab-paper" role="tab" aria-selected="false" type="button">Simulação acompanhada</button>
+        <button id="tab-backtest" role="tab" aria-selected="false" type="button">Teste histórico</button>
+      </div>
+      <div class="last-sync"><span class="sync-light"></span><span id="updated-text">—</span></div>
+    </div>
+
+    <main>
+      <div class="hero-grid">
+        <section class="hero-primary" aria-labelledby="balance-title">
+          <div class="hero-top"><span class="overline" id="balance-title">PATRIMÔNIO DA SIMULAÇÃO</span><span class="hero-badge" id="phase-badge">DADOS SIMULADOS</span></div>
+          <div class="hero-number" id="balance-value">R$ —</div>
+          <div class="profit-row"><span id="profit-pill" class="profit-pill neutral">—</span><span id="profit-detail" class="profit-detail">desde o início da simulação</span></div>
+          <div class="hero-divider"></div>
+          <div class="hero-foot"><span>Capital inicial <strong id="initial-value">R$ —</strong></span><span id="market-name">BTC / BRL</span></div>
+        </section>
+        <section class="hero-side" aria-label="Exposição e controle de risco">
+          <div class="side-box"><span class="side-heading">CAPITAL DISPONÍVEL</span><strong id="cash-value">R$ —</strong><span id="cash-subtext" class="side-muted">Saldo em reais</span></div>
+          <div class="side-box"><span class="side-heading">RISCO DA ESTRATÉGIA</span><strong id="risk-value">—</strong><span id="risk-subtext" class="side-muted">Maior queda no patrimônio</span></div>
+        </section>
+      </div>
+
+      <div class="metric-grid">
+        <section class="metric-card"><span class="metric-label">RESULTADO ACUMULADO</span><strong id="metric-net">—</strong><span class="metric-note" id="metric-return">—</span></section>
+        <section class="metric-card"><span class="metric-label">OPERAÇÕES CONCLUÍDAS</span><strong id="metric-trades">—</strong><span class="metric-note">Vendas simuladas</span></section>
+        <section class="metric-card"><span class="metric-label">TAXA DE ACERTO</span><strong id="metric-winrate">—</strong><span class="metric-note">Das operações encerradas</span></section>
+        <section class="metric-card"><span class="metric-label">SITUAÇÃO DO ROBÔ</span><strong id="metric-status">—</strong><span class="metric-note" id="metric-status-note">—</span></section>
+      </div>
+
+      <div class="section-two-col">
+        <section class="panel chart-panel">
+          <div class="panel-header"><div><span class="eyebrow">DESEMPENHO</span><h2>Evolução do capital</h2></div><div class="chart-legend"><span class="legend-stroke"></span> Patrimônio (BRL)</div></div>
+          <div id="chart-wrap" class="chart-wrap"><svg id="equity-chart" role="img" aria-label="Curva de patrimônio simulado" viewBox="0 0 800 280" preserveAspectRatio="none"></svg><div class="chart-empty" id="chart-empty" hidden>Sem histórico de patrimônio disponível.</div></div>
+          <div class="chart-foot"><span id="chart-start">—</span><span id="chart-end">—</span></div>
+          <div class="benchmark" id="benchmark"><div><span>COMPARAÇÃO COM COMPRAR E MANTER BTC</span><small>Mesmo capital, com custos estimados</small></div><strong id="benchmark-value">—</strong></div>
+        </section>
+        <section class="panel strategy-panel">
+          <div class="panel-header"><div><span class="eyebrow">ESTRATÉGIA</span><h2>Condição operacional</h2></div><span class="strategy-icon" aria-hidden="true">◈</span></div>
+          <div class="strategy-state" id="strategy-state">—</div>
+          <p class="strategy-desc" id="strategy-description">Aguardando informações da simulação.</p>
+          <div class="strategy-list"><div><span>Mercado</span><strong>BTC/BRL Spot</strong></div><div><span>Intervalo de análise</span><strong>4 horas</strong></div><div><span>Exposição máxima por operação</span><strong>R$ 200</strong></div><div><span>Alavancagem</span><strong>Sem alavancagem</strong></div><div id="paper-stop-row" hidden><span>Stop simulado / Alvo</span><strong id="paper-stops">—</strong></div></div>
+          <p class="strategy-note">Os stops deste robô são simulados em software, não ordens de proteção na corretora.</p>
+        </section>
+      </div>
+
+      <section class="panel trades-panel">
+        <div class="panel-header"><div><span class="eyebrow">HISTÓRICO</span><h2>Últimas operações</h2></div><span class="trades-counter" id="table-count">—</span></div>
+        <div class="table-scroll"><table aria-label="Histórico de operações simuladas"><thead><tr><th>SAÍDA (UTC)</th><th>PREÇO ENTRADA</th><th>PREÇO SAÍDA</th><th>MOTIVO</th><th class="align-right">RESULTADO</th></tr></thead><tbody id="trades-body"></tbody></table></div>
+        <div class="empty-trades" id="trades-empty" hidden>Nenhuma operação encerrada neste período.</div>
+      </section>
+    </main>
+    <footer><div><strong>NEXO / TRADING LAB</strong><span>Ferramenta de acompanhamento educacional</span></div><p>Somente simulação. Este painel não envia ordens financeiras, não representa ganhos reais nem garante resultados futuros.</p></footer>
+  </div>
+</body>
+</html>

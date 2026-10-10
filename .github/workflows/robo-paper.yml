@@ -1,0 +1,64 @@
+name: Robo BTC - simulacao na nuvem
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC. Checagem horaria, sempre no minuto 17 (horario pode atrasar).
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: robo-paper-unico
+  cancel-in-progress: false
+
+jobs:
+  executar-e-publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - name: Obter codigo e estado anterior
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar biblioteca de calculo
+        run: python -m pip install -r requirements.txt
+
+      - name: Rodar simulacao (nao conecta conta da corretora)
+        run: python executar_nuvem.py
+
+      - name: Guardar estado simulado para proxima execucao
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- estado_paper.json
+          if [ -d relatorios/historico ]; then git add -A -- relatorios/historico; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Atualiza estado paper trading [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Preparar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Empacotar painel
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: painel
+
+      - name: Publicar painel
+        id: publicar
+        uses: actions/deploy-pages@v4
