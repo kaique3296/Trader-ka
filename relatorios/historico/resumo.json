@@ -1,0 +1,26 @@
+{
+  "type": "BACKTEST_EM_DADOS_FORNECIDOS",
+  "symbol": "BTCBRL",
+  "quote_currency": "BRL",
+  "interval": "4h",
+  "start_utc": "2025-10-10T08:00:00+00:00",
+  "end_utc": "2026-10-10T00:00:00+00:00",
+  "candles": 2189,
+  "initial_brl": 1000.0,
+  "final_brl": 973.34,
+  "net_result_brl": -26.66,
+  "net_return_pct": -2.67,
+  "max_drawdown_pct": -4.03,
+  "trades": 27,
+  "wins": 7,
+  "win_rate_pct": 25.93,
+  "benchmark_buy_hold_brl": 632.14,
+  "benchmark_buy_hold_return_pct": -36.79,
+  "halted_by_drawdown": false,
+  "fee_pct_per_side": 0.1,
+  "slippage_pct_per_side": 0.05,
+  "dataset_label": "BINANCE_PUBLICO_BTCBRL_NA_DATA_DA_COLETA",
+  "source_files": [
+    "Binance Spot API klines BTCBRL 4h"
+  ]
+}
