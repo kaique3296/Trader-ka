@@ -24,7 +24,7 @@
   const setText = (id, value) => { $(id).textContent = String(value); };
   const pnlClass = (value) => value > 0 ? 'text-positive' : value < 0 ? 'text-negative' : '';
   const themeNumber = (id, value, format=money) => {
-    const el=$(id); el.textContent=format(value); el.classList.remove('text-positive', 'text-negative'); if (finite(value)) el.classList.add(pnlClass(value));
+    const el=$(id); el.textContent=format(value); el.classList.remove('text-positive', 'text-negative'); if (finite(value) && value !== 0) el.classList.add(pnlClass(value));
   };
   const valid = (raw) => raw && raw.schema_version === 2 && raw.paper_only === true && (raw.paper || raw.backtest) && (!raw.backtest || (raw.backtest.summary && Array.isArray(raw.backtest.trades) && Array.isArray(raw.backtest.equity_curve))) && (!raw.paper || (Array.isArray(raw.paper.trades) && Array.isArray(raw.paper.equity_curve)));
   const messages = {stop:'Stop-loss',stop_software:'Stop simulado',target:'Alvo atingido',target_software:'Alvo simulado',trend_exit:'Saída por tendência',end_of_test:'Fim do backtest'};
