@@ -6,12 +6,12 @@
   "stop_brl": 0.0,
   "target_brl": 0.0,
   "entry_time_utc": null,
-  "last_processed_bar": "2026-10-13T16:00:00+00:00",
+  "last_processed_bar": "2026-10-13T20:00:00+00:00",
   "peak_equity_brl": 1000.0,
   "halted": false,
   "daily_realized_brl": {},
   "trades": [],
-  "checks": 18,
+  "checks": 19,
   "equity_history": [
     {
       "time": "2026-10-10T12:57:24.941323+00:00",
@@ -87,11 +87,16 @@
       "time": "2026-10-13T23:17:39.667107+00:00",
       "equity_brl": 1000.0,
       "bar": "2026-10-13T16:00:00+00:00"
+    },
+    {
+      "time": "2026-10-14T01:59:31.384328+00:00",
+      "equity_brl": 1000.0,
+      "bar": "2026-10-13T20:00:00+00:00"
     }
   ],
   "strategy": "v4",
   "started_utc": "2026-10-10T12:33:22.841926+00:00",
-  "last_check_utc": "2026-10-13T23:17:39.667107+00:00",
-  "last_price_brl": 419873.0,
+  "last_check_utc": "2026-10-14T01:59:31.384328+00:00",
+  "last_price_brl": 419894.0,
   "equity_brl": 1000.0
 }
