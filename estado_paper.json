@@ -1,17 +1,28 @@
 {
-  "cash_brl": 800.0,
-  "btc_qty": 0.000469445762596233,
-  "entry_brl": 425608.698,
-  "buy_cost_brl": 200.0,
-  "stop_brl": 412840.43705999997,
-  "target_brl": 451145.21988,
-  "entry_time_utc": "2026-11-03T15:10:45.131457+00:00",
-  "last_processed_bar": "2026-11-05T08:00:00+00:00",
+  "cash_brl": 996.3297024896439,
+  "btc_qty": 0.0,
+  "entry_brl": 0.0,
+  "buy_cost_brl": 0.0,
+  "stop_brl": 0.0,
+  "target_brl": 0.0,
+  "entry_time_utc": null,
+  "last_processed_bar": "2026-11-05T16:00:00+00:00",
   "peak_equity_brl": 1007.156701248384,
   "halted": false,
-  "daily_realized_brl": {},
-  "trades": [],
-  "checks": 133,
+  "daily_realized_brl": {
+    "2026-11-05": -3.670297510356164
+  },
+  "trades": [
+    {
+      "entry_time_utc": "2026-11-03T15:10:45.131457+00:00",
+      "exit_time_utc": "2026-11-05T22:00:10.250156+00:00",
+      "entry_brl": 425608.698,
+      "exit_brl": 418634.58,
+      "profit_brl": -3.67,
+      "reason": "trend_exit"
+    }
+  ],
+  "checks": 134,
   "equity_history": [
     {
       "time": "2026-10-10T05:58:30.629885+00:00",
@@ -597,11 +608,16 @@
       "time": "2026-11-05T15:29:30.521612+00:00",
       "equity_brl": 996.5603,
       "bar": "2026-11-05T08:00:00+00:00"
+    },
+    {
+      "time": "2026-11-05T22:00:10.250156+00:00",
+      "equity_brl": 996.3297,
+      "bar": "2026-11-05T16:00:00+00:00"
     }
   ],
-  "last_check_utc": "2026-11-05T15:29:30.521612+00:00",
-  "last_price_brl": 419336.0,
-  "equity_brl": 996.5603,
+  "last_check_utc": "2026-11-05T22:00:10.250156+00:00",
+  "last_price_brl": 418844.0,
+  "equity_brl": 996.3297,
   "strategy": "v4",
   "started_utc": "2026-10-10T12:33:22.832769+00:00"
 }
