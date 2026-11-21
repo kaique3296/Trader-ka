@@ -2,20 +2,20 @@
   "type": "BACKTEST_SCALPING_1M_EXPERIMENTAL",
   "market": "BTCBRL",
   "period": "1m",
-  "first_candle_utc": "2026-11-05T21:38:00+00:00",
-  "last_candle_utc": "2026-11-19T21:36:00+00:00",
+  "first_candle_utc": "2026-11-07T02:18:00+00:00",
+  "last_candle_utc": "2026-11-21T02:16:00+00:00",
   "candles": 20159,
   "initial_brl": 1000.0,
-  "final_brl": 968.04,
-  "profit_brl": -31.96,
-  "return_pct": -3.2,
-  "max_drawdown_pct": -3.22,
-  "trades": 46,
-  "wins": 2,
-  "win_rate_pct": 4.35,
+  "final_brl": 965.67,
+  "profit_brl": -34.33,
+  "return_pct": -3.43,
+  "max_drawdown_pct": -3.45,
+  "trades": 48,
+  "wins": 3,
+  "win_rate_pct": 6.25,
   "open_position": false,
   "halted": false,
-  "total_estimated_cost_brl": 29.81,
+  "total_estimated_cost_brl": 31.04,
   "max_position_brl": 150.0,
   "fee_pct_per_side": 0.15,
   "slippage_pct_per_side": 0.06999999999999999,
@@ -36,4310 +36,4310 @@
   },
   "trades_sample": [
     {
-      "entry_time_utc": "2026-11-10T04:19:00+00:00",
-      "exit_time_utc": "2026-11-10T04:39:00+00:00",
-      "entry_brl": 413099.97,
-      "exit_brl": 412595.98,
-      "profit_brl": -0.6247,
-      "duration_minutes": 20,
-      "reason": "tempo_maximo",
-      "notional_brl": 148.32
-    },
-    {
-      "entry_time_utc": "2026-11-11T00:37:00+00:00",
-      "exit_time_utc": "2026-11-11T00:43:00+00:00",
-      "entry_brl": 411135.59,
-      "exit_brl": 409686.02,
-      "profit_brl": -0.965,
-      "duration_minutes": 6,
-      "reason": "reversao",
-      "notional_brl": 148.22
-    },
-    {
-      "entry_time_utc": "2026-11-11T05:23:00+00:00",
-      "exit_time_utc": "2026-11-11T05:29:00+00:00",
-      "entry_brl": 411262.68,
-      "exit_brl": 410004.8,
-      "profit_brl": -0.8951,
-      "duration_minutes": 6,
-      "reason": "reversao",
-      "notional_brl": 148.08
-    },
-    {
-      "entry_time_utc": "2026-11-11T05:58:00+00:00",
-      "exit_time_utc": "2026-11-11T06:06:00+00:00",
-      "entry_brl": 411187.63,
-      "exit_brl": 410144.7,
-      "profit_brl": -0.8173,
-      "duration_minutes": 8,
-      "reason": "reversao",
-      "notional_brl": 147.94
-    },
-    {
-      "entry_time_utc": "2026-11-12T02:08:00+00:00",
-      "exit_time_utc": "2026-11-12T02:28:00+00:00",
-      "entry_brl": 413174.02,
-      "exit_brl": 413020.68,
-      "profit_brl": -0.4975,
-      "duration_minutes": 20,
-      "reason": "tempo_maximo",
-      "notional_brl": 147.82
-    },
-    {
-      "entry_time_utc": "2026-11-12T03:32:00+00:00",
-      "exit_time_utc": "2026-11-12T03:36:00+00:00",
-      "entry_brl": 413728.41,
-      "exit_brl": 412587.99,
-      "profit_brl": -0.8486,
-      "duration_minutes": 4,
-      "reason": "reversao",
-      "notional_brl": 147.75
-    },
-    {
-      "entry_time_utc": "2026-11-12T06:10:00+00:00",
-      "exit_time_utc": "2026-11-12T06:30:00+00:00",
-      "entry_brl": 412272.39,
-      "exit_brl": 411884.48,
-      "profit_brl": -0.5807,
-      "duration_minutes": 20,
-      "reason": "tempo_maximo",
-      "notional_brl": 147.62
-    },
-    {
       "entry_time_utc": "2026-11-13T00:57:00+00:00",
       "exit_time_utc": "2026-11-13T01:02:00+00:00",
       "entry_brl": 404042.63,
       "exit_brl": 402566.01,
-      "profit_brl": -0.9795,
+      "profit_brl": -0.9817,
       "duration_minutes": 5,
       "reason": "reversao",
-      "notional_brl": 147.53
+      "notional_brl": 147.87
     },
     {
       "entry_time_utc": "2026-11-13T01:26:00+00:00",
       "exit_time_utc": "2026-11-13T01:42:00+00:00",
       "entry_brl": 402811.77,
       "exit_brl": 402107.33,
-      "profit_brl": -0.6985,
+      "profit_brl": -0.7,
       "duration_minutes": 16,
       "reason": "reversao",
-      "notional_brl": 147.38
+      "notional_brl": 147.72
     },
     {
       "entry_time_utc": "2026-11-13T05:22:00+00:00",
       "exit_time_utc": "2026-11-13T05:29:00+00:00",
       "entry_brl": 390484.15,
       "exit_brl": 389056.47,
-      "profit_brl": -0.978,
+      "profit_brl": -0.9803,
       "duration_minutes": 7,
       "reason": "reversao",
-      "notional_brl": 147.28
+      "notional_brl": 147.61
     },
     {
       "entry_time_utc": "2026-11-14T01:29:00+00:00",
       "exit_time_utc": "2026-11-14T01:32:00+00:00",
       "entry_brl": 389948.77,
       "exit_brl": 389005.51,
-      "profit_brl": -0.7956,
+      "profit_brl": -0.7974,
       "duration_minutes": 3,
       "reason": "reversao",
-      "notional_brl": 147.13
+      "notional_brl": 147.47
     },
     {
       "entry_time_utc": "2026-11-14T01:56:00+00:00",
       "exit_time_utc": "2026-11-14T02:16:00+00:00",
       "entry_brl": 389822.68,
       "exit_brl": 389495.16,
-      "profit_brl": -0.5635,
+      "profit_brl": -0.5648,
       "duration_minutes": 20,
       "reason": "tempo_maximo",
-      "notional_brl": 147.01
+      "notional_brl": 147.35
     },
     {
       "entry_time_utc": "2026-11-14T04:54:00+00:00",
       "exit_time_utc": "2026-11-14T05:02:00+00:00",
       "entry_brl": 383825.49,
       "exit_brl": 382327.18,
-      "profit_brl": -1.012,
+      "profit_brl": -1.0143,
       "duration_minutes": 8,
       "reason": "reversao",
-      "notional_brl": 146.93
+      "notional_brl": 147.26
     },
     {
       "entry_time_utc": "2026-11-15T01:59:00+00:00",
       "exit_time_utc": "2026-11-15T02:06:00+00:00",
       "entry_brl": 359710.62,
       "exit_brl": 363053.41,
-      "profit_brl": 0.9202,
+      "profit_brl": 0.9223,
       "duration_minutes": 7,
       "reason": "alvo",
-      "notional_brl": 146.78
+      "notional_brl": 147.11
     },
     {
       "entry_time_utc": "2026-11-15T04:15:00+00:00",
       "exit_time_utc": "2026-11-15T04:35:00+00:00",
       "entry_brl": 372987.91,
       "exit_brl": 372836.83,
-      "profit_brl": -0.4994,
+      "profit_brl": -0.5005,
       "duration_minutes": 20,
       "reason": "tempo_maximo",
-      "notional_brl": 146.92
+      "notional_brl": 147.25
     },
     {
       "entry_time_utc": "2026-11-15T04:49:00+00:00",
       "exit_time_utc": "2026-11-15T05:02:00+00:00",
       "entry_brl": 373572.32,
       "exit_brl": 371978.43,
-      "profit_brl": -1.0645,
+      "profit_brl": -1.0669,
       "duration_minutes": 13,
       "reason": "reversao",
-      "notional_brl": 146.84
+      "notional_brl": 147.17
     },
     {
       "entry_time_utc": "2026-11-15T05:20:00+00:00",
       "exit_time_utc": "2026-11-15T05:27:00+00:00",
       "entry_brl": 373097.99,
       "exit_brl": 371696.63,
-      "profit_brl": -0.9887,
+      "profit_brl": -0.9909,
       "duration_minutes": 7,
       "reason": "reversao",
-      "notional_brl": 146.68
+      "notional_brl": 147.01
     },
     {
       "entry_time_utc": "2026-11-16T00:04:00+00:00",
       "exit_time_utc": "2026-11-16T00:11:00+00:00",
       "entry_brl": 374828.2,
       "exit_brl": 373446.4,
-      "profit_brl": -0.9775,
+      "profit_brl": -0.9797,
       "duration_minutes": 7,
       "reason": "reversao",
-      "notional_brl": 146.53
+      "notional_brl": 146.86
     },
     {
       "entry_time_utc": "2026-11-16T02:18:00+00:00",
       "exit_time_utc": "2026-11-16T02:38:00+00:00",
       "entry_brl": 372117.3,
       "exit_brl": 372363.16,
-      "profit_brl": -0.3421,
+      "profit_brl": -0.3428,
       "duration_minutes": 20,
       "reason": "tempo_maximo",
-      "notional_brl": 146.39
+      "notional_brl": 146.72
     },
     {
       "entry_time_utc": "2026-11-16T03:57:00+00:00",
       "exit_time_utc": "2026-11-16T04:06:00+00:00",
       "entry_brl": 372226.38,
       "exit_brl": 370320.59,
-      "profit_brl": -1.1853,
+      "profit_brl": -1.188,
       "duration_minutes": 9,
       "reason": "reversao",
-      "notional_brl": 146.34
+      "notional_brl": 146.67
     },
     {
       "entry_time_utc": "2026-11-17T01:05:00+00:00",
       "exit_time_utc": "2026-11-17T01:21:00+00:00",
       "entry_brl": 375284.52,
       "exit_brl": 374437.71,
-      "profit_brl": -0.7666,
+      "profit_brl": -0.7684,
       "duration_minutes": 16,
       "reason": "reversao",
-      "notional_brl": 146.16
+      "notional_brl": 146.49
     },
     {
       "entry_time_utc": "2026-11-17T01:37:00+00:00",
       "exit_time_utc": "2026-11-17T01:57:00+00:00",
       "entry_brl": 375428.62,
       "exit_brl": 375037.29,
-      "profit_brl": -0.5892,
+      "profit_brl": -0.5906,
       "duration_minutes": 20,
       "reason": "tempo_maximo",
-      "notional_brl": 146.04
+      "notional_brl": 146.37
     },
     {
       "entry_time_utc": "2026-11-17T02:07:00+00:00",
       "exit_time_utc": "2026-11-17T02:14:00+00:00",
       "entry_brl": 376152.12,
       "exit_brl": 375043.29,
-      "profit_brl": -0.8662,
+      "profit_brl": -0.8681,
       "duration_minutes": 7,
       "reason": "reversao",
-      "notional_brl": 145.95
+      "notional_brl": 146.28
     },
     {
       "entry_time_utc": "2026-11-18T02:26:00+00:00",
       "exit_time_utc": "2026-11-18T02:41:00+00:00",
       "entry_brl": 373833.5,
       "exit_brl": 372605.99,
-      "profit_brl": -0.9142,
+      "profit_brl": -0.9163,
       "duration_minutes": 15,
       "reason": "reversao",
-      "notional_brl": 145.82
+      "notional_brl": 146.15
     },
     {
       "entry_time_utc": "2026-11-18T03:08:00+00:00",
       "exit_time_utc": "2026-11-18T03:22:00+00:00",
       "entry_brl": 373431.22,
       "exit_brl": 372562.02,
-      "profit_brl": -0.7745,
+      "profit_brl": -0.7762,
       "duration_minutes": 14,
       "reason": "reversao",
-      "notional_brl": 145.69
+      "notional_brl": 146.02
     },
     {
       "entry_time_utc": "2026-11-18T03:51:00+00:00",
       "exit_time_utc": "2026-11-18T03:59:00+00:00",
       "entry_brl": 373998.62,
       "exit_brl": 373062.67,
-      "profit_brl": -0.7993,
+      "profit_brl": -0.8011,
       "duration_minutes": 8,
       "reason": "reversao",
-      "notional_brl": 145.57
+      "notional_brl": 145.9
     },
     {
       "entry_time_utc": "2026-11-19T00:33:00+00:00",
       "exit_time_utc": "2026-11-19T00:53:00+00:00",
       "entry_brl": 371488.86,
       "exit_brl": 372810.85,
-      "profit_brl": 0.0804,
+      "profit_brl": 0.0805,
       "duration_minutes": 20,
       "reason": "tempo_maximo",
-      "notional_brl": 145.45
+      "notional_brl": 145.78
     },
     {
       "entry_time_utc": "2026-11-19T01:04:00+00:00",
       "exit_time_utc": "2026-11-19T01:12:00+00:00",
       "entry_brl": 373395.19,
       "exit_brl": 372281.22,
-      "profit_brl": -0.8684,
+      "profit_brl": -0.8704,
       "duration_minutes": 8,
       "reason": "reversao",
-      "notional_brl": 145.46
+      "notional_brl": 145.79
     },
     {
       "entry_time_utc": "2026-11-19T01:51:00+00:00",
       "exit_time_utc": "2026-11-19T02:11:00+00:00",
       "entry_brl": 371832.1,
       "exit_brl": 371668.65,
-      "profit_brl": -0.499,
+      "profit_brl": -0.5002,
       "duration_minutes": 20,
       "reason": "tempo_maximo",
-      "notional_brl": 145.33
+      "notional_brl": 145.66
     },
     {
       "entry_time_utc": "2026-11-19T03:55:00+00:00",
       "exit_time_utc": "2026-11-19T04:15:00+00:00",
       "entry_brl": 373420.21,
       "exit_brl": 373649.26,
-      "profit_brl": -0.3463,
+      "profit_brl": -0.3471,
       "duration_minutes": 20,
       "reason": "tempo_maximo",
-      "notional_brl": 145.26
+      "notional_brl": 145.59
+    },
+    {
+      "entry_time_utc": "2026-11-20T00:10:00+00:00",
+      "exit_time_utc": "2026-11-20T00:30:00+00:00",
+      "entry_brl": 370660.28,
+      "exit_brl": 370517.46,
+      "profit_brl": -0.4919,
+      "duration_minutes": 20,
+      "reason": "tempo_maximo",
+      "notional_brl": 145.53
+    },
+    {
+      "entry_time_utc": "2026-11-20T01:31:00+00:00",
+      "exit_time_utc": "2026-11-20T01:38:00+00:00",
+      "entry_brl": 373856.52,
+      "exit_brl": 371761.58,
+      "profit_brl": -1.2484,
+      "duration_minutes": 7,
+      "reason": "reversao",
+      "notional_brl": 145.46
+    },
+    {
+      "entry_time_utc": "2026-11-20T02:45:00+00:00",
+      "exit_time_utc": "2026-11-20T03:05:00+00:00",
+      "entry_brl": 369858.72,
+      "exit_brl": 371198.98,
+      "profit_brl": 0.0897,
+      "duration_minutes": 20,
+      "reason": "tempo_maximo",
+      "notional_brl": 145.27
+    },
+    {
+      "entry_time_utc": "2026-11-20T03:23:00+00:00",
+      "exit_time_utc": "2026-11-20T03:35:00+00:00",
+      "entry_brl": 371752.04,
+      "exit_brl": 370419.52,
+      "profit_brl": -0.9544,
+      "duration_minutes": 12,
+      "reason": "reversao",
+      "notional_brl": 145.29
+    },
+    {
+      "entry_time_utc": "2026-11-20T05:01:00+00:00",
+      "exit_time_utc": "2026-11-20T05:10:00+00:00",
+      "entry_brl": 369288.32,
+      "exit_brl": 367973.24,
+      "profit_brl": -0.9501,
+      "duration_minutes": 9,
+      "reason": "reversao",
+      "notional_brl": 145.14
+    },
+    {
+      "entry_time_utc": "2026-11-20T05:21:00+00:00",
+      "exit_time_utc": "2026-11-20T05:41:00+00:00",
+      "entry_brl": 369409.41,
+      "exit_brl": 369195.38,
+      "profit_brl": -0.5181,
+      "duration_minutes": 20,
+      "reason": "tempo_maximo",
+      "notional_brl": 145.0
+    },
+    {
+      "entry_time_utc": "2026-11-21T00:10:00+00:00",
+      "exit_time_utc": "2026-11-21T00:30:00+00:00",
+      "entry_brl": 357619.16,
+      "exit_brl": 357494.58,
+      "profit_brl": -0.4845,
+      "duration_minutes": 20,
+      "reason": "tempo_maximo",
+      "notional_brl": 144.92
     }
   ],
   "equity_curve": [
     {
-      "time": "2026-11-06T00:38:00+00:00",
-      "equity_brl": 998.18
-    },
-    {
-      "time": "2026-11-06T00:58:00+00:00",
-      "equity_brl": 998.4749
-    },
-    {
-      "time": "2026-11-06T01:18:00+00:00",
-      "equity_brl": 998.4749
-    },
-    {
-      "time": "2026-11-06T01:38:00+00:00",
-      "equity_brl": 998.4749
-    },
-    {
-      "time": "2026-11-06T01:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T02:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T02:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T02:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T03:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T03:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T03:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T04:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T04:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T04:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T05:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T05:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T05:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T06:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T06:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T06:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T07:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T07:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T07:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T08:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T08:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T08:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T09:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T09:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T09:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T10:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T10:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T10:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T11:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T11:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T11:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T12:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T12:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T12:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T13:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T13:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T13:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T14:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T14:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T14:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T15:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T15:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T15:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T16:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T16:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T16:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T17:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T17:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T17:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T18:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T18:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T18:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T19:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T19:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T19:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T20:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T20:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T20:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T21:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T21:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T21:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T22:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T22:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T22:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T23:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T23:38:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-06T23:58:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-07T00:18:00+00:00",
-      "equity_brl": 997.6106
-    },
-    {
-      "time": "2026-11-07T00:38:00+00:00",
-      "equity_brl": 997.039
-    },
-    {
-      "time": "2026-11-07T00:58:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T01:18:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T01:38:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T01:58:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T02:18:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T02:38:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T02:58:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T03:18:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T03:38:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T03:58:00+00:00",
-      "equity_brl": 996.9568
-    },
-    {
-      "time": "2026-11-07T04:18:00+00:00",
-      "equity_brl": 996.2214
-    },
-    {
-      "time": "2026-11-07T04:38:00+00:00",
-      "equity_brl": 996.2214
-    },
-    {
-      "time": "2026-11-07T04:58:00+00:00",
-      "equity_brl": 996.2214
-    },
-    {
       "time": "2026-11-07T05:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T05:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T05:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T06:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T06:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T06:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T07:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T07:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T07:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T08:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T08:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T08:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T09:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T09:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T09:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T10:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T10:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T10:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T11:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T11:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T11:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T12:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T12:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T12:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T13:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T13:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T13:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T14:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T14:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T14:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T15:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T15:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T15:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T16:18:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T16:38:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T16:58:00+00:00",
-      "equity_brl": 996.2214
+      "equity_brl": 999.2623
     },
     {
       "time": "2026-11-07T17:18:00+00:00",
-      "equity_brl": 995.5657
+      "equity_brl": 998.6046
     },
     {
       "time": "2026-11-07T17:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 998.6251
     },
     {
       "time": "2026-11-07T17:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 998.6251
     },
     {
       "time": "2026-11-07T18:18:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T18:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T18:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T19:18:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T19:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T19:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T20:18:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T20:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T20:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T21:18:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T21:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T21:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T22:18:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T22:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T22:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T23:18:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T23:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-07T23:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-08T00:18:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-08T00:38:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-08T00:58:00+00:00",
-      "equity_brl": 995.5861
+      "equity_brl": 997.8354
     },
     {
       "time": "2026-11-08T01:18:00+00:00",
-      "equity_brl": 994.8404
+      "equity_brl": 997.088
     },
     {
       "time": "2026-11-08T01:38:00+00:00",
-      "equity_brl": 994.6422
+      "equity_brl": 996.8894
     },
     {
       "time": "2026-11-08T01:58:00+00:00",
-      "equity_brl": 994.0022
+      "equity_brl": 996.2479
     },
     {
       "time": "2026-11-08T02:18:00+00:00",
-      "equity_brl": 993.1709
+      "equity_brl": 995.4148
     },
     {
       "time": "2026-11-08T02:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T02:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T03:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T03:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T03:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T04:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T04:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T04:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T05:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T05:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T05:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T06:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T06:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T06:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T07:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T07:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T07:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T08:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T08:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T08:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T09:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T09:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T09:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T10:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T10:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T10:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T11:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T11:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T11:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T12:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T12:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T12:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T13:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T13:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T13:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T14:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T14:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T14:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T15:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T15:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T15:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T16:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T16:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T16:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T17:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T17:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T17:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T18:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T18:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T18:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T19:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T19:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T19:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T20:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T20:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T20:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T21:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T21:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T21:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T22:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T22:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T22:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T23:18:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T23:38:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-08T23:58:00+00:00",
-      "equity_brl": 993.1907
+      "equity_brl": 995.4347
     },
     {
       "time": "2026-11-09T00:18:00+00:00",
-      "equity_brl": 992.4192
+      "equity_brl": 994.6614
     },
     {
       "time": "2026-11-09T00:38:00+00:00",
-      "equity_brl": 992.1478
+      "equity_brl": 994.3894
     },
     {
       "time": "2026-11-09T00:58:00+00:00",
-      "equity_brl": 991.5546
+      "equity_brl": 993.7949
     },
     {
       "time": "2026-11-09T01:18:00+00:00",
-      "equity_brl": 991.3171
+      "equity_brl": 993.5568
     },
     {
       "time": "2026-11-09T01:38:00+00:00",
-      "equity_brl": 991.3171
+      "equity_brl": 993.5568
     },
     {
       "time": "2026-11-09T01:58:00+00:00",
-      "equity_brl": 991.3171
+      "equity_brl": 993.5568
     },
     {
       "time": "2026-11-09T02:18:00+00:00",
-      "equity_brl": 991.3171
+      "equity_brl": 993.5568
     },
     {
       "time": "2026-11-09T02:38:00+00:00",
-      "equity_brl": 991.3171
+      "equity_brl": 993.5568
     },
     {
       "time": "2026-11-09T02:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T03:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T03:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T03:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T04:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T04:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T04:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T05:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T05:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T05:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T06:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T06:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T06:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T07:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T07:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T07:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T08:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T08:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T08:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T09:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T09:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T09:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T10:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T10:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T10:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T11:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T11:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T11:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T12:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T12:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T12:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T13:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T13:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T13:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T14:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T14:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T14:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T15:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T15:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T15:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T16:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T16:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T16:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T17:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T17:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T17:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T18:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T18:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T18:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T19:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T19:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T19:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T20:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T20:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T20:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T21:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T21:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T21:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T22:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T22:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T22:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T23:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T23:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-09T23:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-10T00:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-10T00:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-10T00:58:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-10T01:18:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-10T01:38:00+00:00",
-      "equity_brl": 990.455
+      "equity_brl": 992.6927
     },
     {
       "time": "2026-11-10T01:58:00+00:00",
-      "equity_brl": 989.6724
+      "equity_brl": 991.9084
     },
     {
       "time": "2026-11-10T02:18:00+00:00",
-      "equity_brl": 989.5229
+      "equity_brl": 991.7585
     },
     {
       "time": "2026-11-10T02:38:00+00:00",
-      "equity_brl": 989.5229
+      "equity_brl": 991.7585
     },
     {
       "time": "2026-11-10T02:58:00+00:00",
-      "equity_brl": 989.5229
+      "equity_brl": 991.7585
     },
     {
       "time": "2026-11-10T03:18:00+00:00",
-      "equity_brl": 989.5229
+      "equity_brl": 991.7585
     },
     {
       "time": "2026-11-10T03:38:00+00:00",
-      "equity_brl": 989.5229
+      "equity_brl": 991.7585
     },
     {
       "time": "2026-11-10T03:58:00+00:00",
-      "equity_brl": 989.5229
+      "equity_brl": 991.7585
     },
     {
       "time": "2026-11-10T04:18:00+00:00",
-      "equity_brl": 988.7748
+      "equity_brl": 991.0088
     },
     {
       "time": "2026-11-10T04:38:00+00:00",
-      "equity_brl": 988.202
+      "equity_brl": 990.4347
     },
     {
       "time": "2026-11-10T04:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T05:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T05:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T05:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T06:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T06:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T06:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T07:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T07:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T07:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T08:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T08:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T08:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T09:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T09:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T09:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T10:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T10:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T10:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T11:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T11:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T11:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T12:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T12:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T12:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T13:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T13:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T13:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T14:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T14:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T14:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T15:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T15:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T15:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T16:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T16:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T16:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T17:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T17:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T17:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T18:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T18:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T18:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T19:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T19:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T19:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T20:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T20:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T20:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T21:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T21:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T21:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T22:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T22:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T22:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T23:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T23:38:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-10T23:58:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-11T00:18:00+00:00",
-      "equity_brl": 988.1502
+      "equity_brl": 990.3827
     },
     {
       "time": "2026-11-11T00:38:00+00:00",
-      "equity_brl": 987.5799
+      "equity_brl": 989.8111
     },
     {
       "time": "2026-11-11T00:58:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T01:18:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T01:38:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T01:58:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T02:18:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T02:38:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T02:58:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T03:18:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T03:38:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T03:58:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T04:18:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T04:38:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T04:58:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T05:18:00+00:00",
-      "equity_brl": 987.1851
+      "equity_brl": 989.4155
     },
     {
       "time": "2026-11-11T05:38:00+00:00",
-      "equity_brl": 986.29
+      "equity_brl": 988.5183
     },
     {
       "time": "2026-11-11T05:58:00+00:00",
-      "equity_brl": 985.6118
+      "equity_brl": 987.8386
     },
     {
       "time": "2026-11-11T06:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T06:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T06:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T07:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T07:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T07:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T08:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T08:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T08:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T09:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T09:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T09:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T10:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T10:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T10:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T11:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T11:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T11:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T12:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T12:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T12:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T13:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T13:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T13:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T14:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T14:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T14:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T15:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T15:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T15:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T16:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T16:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T16:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T17:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T17:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T17:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T18:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T18:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T18:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T19:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T19:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T19:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T20:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T20:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T20:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T21:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T21:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T21:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T22:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T22:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T22:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T23:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T23:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-11T23:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-12T00:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-12T00:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-12T00:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-12T01:18:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-12T01:38:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-12T01:58:00+00:00",
-      "equity_brl": 985.4727
+      "equity_brl": 987.6992
     },
     {
       "time": "2026-11-12T02:18:00+00:00",
-      "equity_brl": 985.141
+      "equity_brl": 987.3667
     },
     {
       "time": "2026-11-12T02:38:00+00:00",
-      "equity_brl": 984.9752
+      "equity_brl": 987.2006
     },
     {
       "time": "2026-11-12T02:58:00+00:00",
-      "equity_brl": 984.9752
+      "equity_brl": 987.2006
     },
     {
       "time": "2026-11-12T03:18:00+00:00",
-      "equity_brl": 984.9752
+      "equity_brl": 987.2006
     },
     {
       "time": "2026-11-12T03:38:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T03:58:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T04:18:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T04:38:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T04:58:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T05:18:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T05:38:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T05:58:00+00:00",
-      "equity_brl": 984.1266
+      "equity_brl": 986.3501
     },
     {
       "time": "2026-11-12T06:18:00+00:00",
-      "equity_brl": 983.5352
+      "equity_brl": 985.7573
     },
     {
       "time": "2026-11-12T06:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T06:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T07:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T07:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T07:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T08:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T08:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T08:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T09:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T09:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T09:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T10:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T10:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T10:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T11:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T11:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T11:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T12:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T12:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T12:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T13:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T13:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T13:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T14:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T14:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T14:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T15:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T15:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T15:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T16:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T16:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T16:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T17:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T17:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T17:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T18:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T18:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T18:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T19:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T19:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T19:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T20:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T20:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T20:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T21:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T21:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T21:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T22:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T22:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T22:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T23:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T23:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-12T23:58:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-13T00:18:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-13T00:38:00+00:00",
-      "equity_brl": 983.5459
+      "equity_brl": 985.7681
     },
     {
       "time": "2026-11-13T00:58:00+00:00",
-      "equity_brl": 982.7989
+      "equity_brl": 985.0194
     },
     {
       "time": "2026-11-13T01:18:00+00:00",
-      "equity_brl": 982.5664
+      "equity_brl": 984.7864
     },
     {
       "time": "2026-11-13T01:38:00+00:00",
-      "equity_brl": 982.1509
+      "equity_brl": 984.3698
     },
     {
       "time": "2026-11-13T01:58:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T02:18:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T02:38:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T02:58:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T03:18:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T03:38:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T03:58:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T04:18:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T04:38:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T04:58:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T05:18:00+00:00",
-      "equity_brl": 981.868
+      "equity_brl": 984.0863
     },
     {
       "time": "2026-11-13T05:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T05:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T06:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T06:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T06:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T07:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T07:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T07:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T08:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T08:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T08:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T09:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T09:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T09:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T10:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T10:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T10:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T11:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T11:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T11:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T12:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T12:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T12:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T13:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T13:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T13:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T14:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T14:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T14:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T15:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T15:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T15:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T16:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T16:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T16:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T17:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T17:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T17:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T18:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T18:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T18:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T19:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T19:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T19:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T20:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T20:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T20:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T21:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T21:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T21:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T22:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T22:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T22:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T23:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T23:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-13T23:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-14T00:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-14T00:38:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-14T00:58:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-14T01:18:00+00:00",
-      "equity_brl": 980.8899
+      "equity_brl": 983.1061
     },
     {
       "time": "2026-11-14T01:38:00+00:00",
-      "equity_brl": 980.0943
+      "equity_brl": 982.3087
     },
     {
       "time": "2026-11-14T01:58:00+00:00",
-      "equity_brl": 979.4429
+      "equity_brl": 981.6558
     },
     {
       "time": "2026-11-14T02:18:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T02:38:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T02:58:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T03:18:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T03:38:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T03:58:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T04:18:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T04:38:00+00:00",
-      "equity_brl": 979.5308
+      "equity_brl": 981.7439
     },
     {
       "time": "2026-11-14T04:58:00+00:00",
-      "equity_brl": 978.7591
+      "equity_brl": 980.9704
     },
     {
       "time": "2026-11-14T05:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T05:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T05:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T06:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T06:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T06:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T07:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T07:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T07:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T08:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T08:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T08:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T09:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T09:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T09:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T10:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T10:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T10:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T11:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T11:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T11:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T12:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T12:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T12:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T13:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T13:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T13:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T14:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T14:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T14:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T15:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T15:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T15:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T16:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T16:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T16:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T17:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T17:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T17:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T18:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T18:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T18:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T19:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T19:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T19:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T20:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T20:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T20:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T21:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T21:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T21:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T22:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T22:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T22:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T23:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T23:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-14T23:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-15T00:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-15T00:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-15T00:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-15T01:18:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-15T01:38:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-15T01:58:00+00:00",
-      "equity_brl": 978.5188
+      "equity_brl": 980.7296
     },
     {
       "time": "2026-11-15T02:18:00+00:00",
-      "equity_brl": 979.4391
+      "equity_brl": 981.652
     },
     {
       "time": "2026-11-15T02:38:00+00:00",
-      "equity_brl": 979.4391
+      "equity_brl": 981.652
     },
     {
       "time": "2026-11-15T02:58:00+00:00",
-      "equity_brl": 979.4391
+      "equity_brl": 981.652
     },
     {
       "time": "2026-11-15T03:18:00+00:00",
-      "equity_brl": 979.4391
+      "equity_brl": 981.652
     },
     {
       "time": "2026-11-15T03:38:00+00:00",
-      "equity_brl": 979.4391
+      "equity_brl": 981.652
     },
     {
       "time": "2026-11-15T03:58:00+00:00",
-      "equity_brl": 979.4391
+      "equity_brl": 981.652
     },
     {
       "time": "2026-11-15T04:18:00+00:00",
-      "equity_brl": 978.5735
+      "equity_brl": 980.7844
     },
     {
       "time": "2026-11-15T04:38:00+00:00",
-      "equity_brl": 978.9397
+      "equity_brl": 981.1514
     },
     {
       "time": "2026-11-15T04:58:00+00:00",
-      "equity_brl": 978.04
+      "equity_brl": 980.2497
     },
     {
       "time": "2026-11-15T05:18:00+00:00",
-      "equity_brl": 977.8752
+      "equity_brl": 980.0845
     },
     {
       "time": "2026-11-15T05:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T05:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T06:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T06:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T06:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T07:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T07:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T07:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T08:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T08:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T08:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T09:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T09:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T09:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T10:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T10:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T10:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T11:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T11:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T11:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T12:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T12:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T12:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T13:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T13:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T13:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T14:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T14:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T14:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T15:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T15:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T15:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T16:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T16:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T16:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T17:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T17:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T17:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T18:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T18:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T18:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T19:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T19:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T19:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T20:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T20:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T20:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T21:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T21:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T21:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T22:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T22:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T22:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T23:18:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T23:38:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-15T23:58:00+00:00",
-      "equity_brl": 976.8865
+      "equity_brl": 979.0936
     },
     {
       "time": "2026-11-16T00:18:00+00:00",
-      "equity_brl": 975.909
+      "equity_brl": 978.1139
     },
     {
       "time": "2026-11-16T00:38:00+00:00",
-      "equity_brl": 975.909
+      "equity_brl": 978.1139
     },
     {
       "time": "2026-11-16T00:58:00+00:00",
-      "equity_brl": 975.909
+      "equity_brl": 978.1139
     },
     {
       "time": "2026-11-16T01:18:00+00:00",
-      "equity_brl": 975.909
+      "equity_brl": 978.1139
     },
     {
       "time": "2026-11-16T01:38:00+00:00",
-      "equity_brl": 975.909
+      "equity_brl": 978.1139
     },
     {
       "time": "2026-11-16T01:58:00+00:00",
-      "equity_brl": 975.909
+      "equity_brl": 978.1139
     },
     {
       "time": "2026-11-16T02:18:00+00:00",
-      "equity_brl": 975.2714
+      "equity_brl": 977.4748
     },
     {
       "time": "2026-11-16T02:38:00+00:00",
-      "equity_brl": 975.5669
+      "equity_brl": 977.771
     },
     {
       "time": "2026-11-16T02:58:00+00:00",
-      "equity_brl": 975.5669
+      "equity_brl": 977.771
     },
     {
       "time": "2026-11-16T03:18:00+00:00",
-      "equity_brl": 975.5669
+      "equity_brl": 977.771
     },
     {
       "time": "2026-11-16T03:38:00+00:00",
-      "equity_brl": 975.5669
+      "equity_brl": 977.771
     },
     {
       "time": "2026-11-16T03:58:00+00:00",
-      "equity_brl": 974.7039
+      "equity_brl": 976.9061
     },
     {
       "time": "2026-11-16T04:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T04:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T04:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T05:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T05:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T05:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T06:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T06:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T06:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T07:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T07:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T07:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T08:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T08:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T08:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T09:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T09:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T09:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T10:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T10:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T10:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T11:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T11:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T11:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T12:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T12:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T12:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T13:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T13:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T13:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T14:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T14:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T14:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T15:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T15:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T15:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T16:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T16:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T16:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T17:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T17:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T17:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T18:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T18:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T18:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T19:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T19:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T19:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T20:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T20:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T20:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T21:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T21:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T21:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T22:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T22:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T22:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T23:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T23:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-16T23:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-17T00:18:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-17T00:38:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-17T00:58:00+00:00",
-      "equity_brl": 974.3816
+      "equity_brl": 976.583
     },
     {
       "time": "2026-11-17T01:18:00+00:00",
-      "equity_brl": 973.7372
+      "equity_brl": 975.9372
     },
     {
       "time": "2026-11-17T01:38:00+00:00",
-      "equity_brl": 972.9835
+      "equity_brl": 975.1818
     },
     {
       "time": "2026-11-17T01:58:00+00:00",
-      "equity_brl": 973.0257
+      "equity_brl": 975.2241
     },
     {
       "time": "2026-11-17T02:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T02:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T02:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T03:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T03:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T03:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T04:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T04:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T04:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T05:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T05:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T05:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T06:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T06:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T06:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T07:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T07:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T07:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T08:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T08:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T08:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T09:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T09:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T09:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T10:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T10:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T10:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T11:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T11:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T11:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T12:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T12:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T12:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T13:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T13:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T13:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T14:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T14:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T14:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T15:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T15:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T15:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T16:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T16:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T16:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T17:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T17:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T17:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T18:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T18:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T18:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T19:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T19:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T19:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T20:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T20:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T20:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T21:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T21:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T21:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T22:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T22:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T22:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T23:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T23:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-17T23:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T00:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T00:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T00:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T01:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T01:38:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T01:58:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T02:18:00+00:00",
-      "equity_brl": 972.1596
+      "equity_brl": 974.356
     },
     {
       "time": "2026-11-18T02:38:00+00:00",
-      "equity_brl": 971.4867
+      "equity_brl": 973.6816
     },
     {
       "time": "2026-11-18T02:58:00+00:00",
-      "equity_brl": 971.2454
+      "equity_brl": 973.4397
     },
     {
       "time": "2026-11-18T03:18:00+00:00",
-      "equity_brl": 970.6508
+      "equity_brl": 972.8438
     },
     {
       "time": "2026-11-18T03:38:00+00:00",
-      "equity_brl": 970.4709
+      "equity_brl": 972.6635
     },
     {
       "time": "2026-11-18T03:58:00+00:00",
-      "equity_brl": 969.6829
+      "equity_brl": 971.8737
     },
     {
       "time": "2026-11-18T04:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T04:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T04:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T05:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T05:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T05:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T06:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T06:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T06:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T07:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T07:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T07:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T08:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T08:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T08:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T09:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T09:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T09:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T10:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T10:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T10:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T11:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T11:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T11:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T12:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T12:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T12:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T13:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T13:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T13:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T14:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T14:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T14:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T15:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T15:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T15:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T16:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T16:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T16:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T17:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T17:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T17:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T18:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T18:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T18:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T19:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T19:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T19:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T20:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T20:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T20:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T21:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T21:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T21:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T22:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T22:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T22:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T23:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T23:38:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-18T23:58:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-19T00:18:00+00:00",
-      "equity_brl": 969.6716
+      "equity_brl": 971.8624
     },
     {
       "time": "2026-11-19T00:38:00+00:00",
-      "equity_brl": 969.5288
+      "equity_brl": 971.7193
     },
     {
       "time": "2026-11-19T00:58:00+00:00",
-      "equity_brl": 969.752
+      "equity_brl": 971.9429
     },
     {
       "time": "2026-11-19T01:18:00+00:00",
-      "equity_brl": 968.8836
+      "equity_brl": 971.0726
     },
     {
       "time": "2026-11-19T01:38:00+00:00",
-      "equity_brl": 968.8836
+      "equity_brl": 971.0726
     },
     {
       "time": "2026-11-19T01:58:00+00:00",
-      "equity_brl": 968.485
+      "equity_brl": 970.6731
     },
     {
       "time": "2026-11-19T02:18:00+00:00",
-      "equity_brl": 968.3845
+      "equity_brl": 970.5724
     },
     {
       "time": "2026-11-19T02:38:00+00:00",
-      "equity_brl": 968.3845
+      "equity_brl": 970.5724
     },
     {
       "time": "2026-11-19T02:58:00+00:00",
-      "equity_brl": 968.3845
+      "equity_brl": 970.5724
     },
     {
       "time": "2026-11-19T03:18:00+00:00",
-      "equity_brl": 968.3845
+      "equity_brl": 970.5724
     },
     {
       "time": "2026-11-19T03:38:00+00:00",
-      "equity_brl": 968.3845
+      "equity_brl": 970.5724
     },
     {
       "time": "2026-11-19T03:58:00+00:00",
-      "equity_brl": 967.82
+      "equity_brl": 970.0066
     },
     {
       "time": "2026-11-19T04:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T04:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T04:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T05:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T05:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T05:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T06:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T06:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T06:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T07:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T07:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T07:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T08:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T08:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T08:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T09:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T09:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T09:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T10:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T10:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T10:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T11:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T11:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T11:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T12:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T12:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T12:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T13:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T13:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T13:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T14:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T14:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T14:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T15:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T15:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T15:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T16:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T16:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T16:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T17:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T17:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T17:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T18:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T18:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T18:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T19:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T19:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T19:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T20:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T20:38:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T20:58:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
       "time": "2026-11-19T21:18:00+00:00",
-      "equity_brl": 968.0382
+      "equity_brl": 970.2253
     },
     {
-      "time": "2026-11-19T21:36:00+00:00",
-      "equity_brl": 968.0382
+      "time": "2026-11-19T21:38:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-19T21:58:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-19T22:18:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-19T22:38:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-19T22:58:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-19T23:18:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-19T23:38:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-19T23:58:00+00:00",
+      "equity_brl": 970.2253
+    },
+    {
+      "time": "2026-11-20T00:18:00+00:00",
+      "equity_brl": 969.9979
+    },
+    {
+      "time": "2026-11-20T00:38:00+00:00",
+      "equity_brl": 969.7335
+    },
+    {
+      "time": "2026-11-20T00:58:00+00:00",
+      "equity_brl": 969.7335
+    },
+    {
+      "time": "2026-11-20T01:18:00+00:00",
+      "equity_brl": 969.7335
+    },
+    {
+      "time": "2026-11-20T01:38:00+00:00",
+      "equity_brl": 968.4851
+    },
+    {
+      "time": "2026-11-20T01:58:00+00:00",
+      "equity_brl": 968.4851
+    },
+    {
+      "time": "2026-11-20T02:18:00+00:00",
+      "equity_brl": 968.4851
+    },
+    {
+      "time": "2026-11-20T02:38:00+00:00",
+      "equity_brl": 968.4851
+    },
+    {
+      "time": "2026-11-20T02:58:00+00:00",
+      "equity_brl": 968.4707
+    },
+    {
+      "time": "2026-11-20T03:18:00+00:00",
+      "equity_brl": 968.5748
+    },
+    {
+      "time": "2026-11-20T03:38:00+00:00",
+      "equity_brl": 967.6204
+    },
+    {
+      "time": "2026-11-20T03:58:00+00:00",
+      "equity_brl": 967.6204
+    },
+    {
+      "time": "2026-11-20T04:18:00+00:00",
+      "equity_brl": 967.6204
+    },
+    {
+      "time": "2026-11-20T04:38:00+00:00",
+      "equity_brl": 967.6204
+    },
+    {
+      "time": "2026-11-20T04:58:00+00:00",
+      "equity_brl": 967.6204
+    },
+    {
+      "time": "2026-11-20T05:18:00+00:00",
+      "equity_brl": 966.6703
+    },
+    {
+      "time": "2026-11-20T05:38:00+00:00",
+      "equity_brl": 966.0884
+    },
+    {
+      "time": "2026-11-20T05:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T06:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T06:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T06:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T07:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T07:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T07:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T08:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T08:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T08:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T09:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T09:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T09:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T10:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T10:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T10:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T11:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T11:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T11:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T12:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T12:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T12:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T13:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T13:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T13:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T14:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T14:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T14:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T15:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T15:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T15:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T16:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T16:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T16:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T17:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T17:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T17:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T18:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T18:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T18:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T19:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T19:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T19:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T20:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T20:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T20:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T21:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T21:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T21:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T22:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T22:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T22:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T23:18:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T23:38:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-20T23:58:00+00:00",
+      "equity_brl": 966.1522
+    },
+    {
+      "time": "2026-11-21T00:18:00+00:00",
+      "equity_brl": 965.5042
+    },
+    {
+      "time": "2026-11-21T00:38:00+00:00",
+      "equity_brl": 965.6677
+    },
+    {
+      "time": "2026-11-21T00:58:00+00:00",
+      "equity_brl": 965.6677
+    },
+    {
+      "time": "2026-11-21T01:18:00+00:00",
+      "equity_brl": 965.6677
+    },
+    {
+      "time": "2026-11-21T01:38:00+00:00",
+      "equity_brl": 965.6677
+    },
+    {
+      "time": "2026-11-21T01:58:00+00:00",
+      "equity_brl": 965.6677
+    },
+    {
+      "time": "2026-11-21T02:16:00+00:00",
+      "equity_brl": 965.6677
     }
   ],
   "source": "Binance API público /api/v3/klines BTCBRL 1m",
   "warning": "Backtest educacional com OHLC de 1 minuto; custos hipotéticos, fills intrabar não verificáveis, sem ordens reais e sem operação contínua. Não garante lucro.",
-  "generated_at_utc": "2026-11-19T21:37:16.277709+00:00",
+  "generated_at_utc": "2026-11-21T02:17:40.299510+00:00",
   "dataset_origin": "API pública Binance BTCBRL 1m / não auditado externamente"
 }
